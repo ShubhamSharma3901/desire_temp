@@ -18,7 +18,7 @@ const Footer = () => {
 					<div className='flex xsPhone:flex-col tablet:flex-row'>
 						<div className='mb-6 md:mb-0 flex flex-col justify-center items-start gap-[4rem] font-titilium text-white/80 tablet:w-[50%] xsPhone:w-full'>
 							<div className='flex flex-col justify-center items-start gap-[2rem]'>
-								<a href='https://flowbite.com/' className='flex items-center'>
+								<a href='#' className='flex items-center'>
 									<Image
 										src={logo}
 										className='h-auto w-[15rem]'
@@ -44,35 +44,35 @@ const Footer = () => {
 								<ul className='text-white font-medium space-y-4 font-titilium'>
 									<li className=''>
 										<a
-											href='https://flowbite.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											ESCO
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Aqualogix Smart Water Meter
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Aqualogix Automation Solution
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Sunaquator Solar Power Plant
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Operation and Maintenance Service
 										</a>
@@ -87,28 +87,28 @@ const Footer = () => {
 								<ul className='text-white font-medium space-y-4 font-titilium'>
 									<li className=''>
 										<a
-											href='https://flowbite.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											About Us
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Contact Us
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Products & Solutions
 										</a>
 									</li>
 									<li>
 										<a
-											href='https://tailwindcss.com/'
+											href='#'
 											className='hover:underline hover:text-[#D5F590] transition'>
 											Services
 										</a>
@@ -122,25 +122,25 @@ const Footer = () => {
 								<Separator className='tablet:w-[80%] xsPhone:w-full h-[2px] bg-white mb-7' />
 								<div className='text-white font-medium  font-titilium flex justify-start gap-8 items-center'>
 									<a
-										href='https://flowbite.com/'
+										href='#'
 										className='hover:underline hover:text-[#D5F590] transition'>
 										<BsInstagram className='h-auto w-6' />
 									</a>
 
 									<a
-										href='https://tailwindcss.com/'
+										href='#'
 										className='hover:underline hover:text-[#D5F590] transition'>
 										<BsMeta className='h-auto w-6' />
 									</a>
 
 									<a
-										href='https://tailwindcss.com/'
+										href='#'
 										className='hover:underline hover:text-[#D5F590] transition'>
 										<BsTwitterX className='h-auto w-6' />
 									</a>
 
 									<a
-										href='https://tailwindcss.com/'
+										href='#'
 										className='hover:underline hover:text-[#D5F590] transition'>
 										<BsLinkedin className='h-auto w-6' />
 									</a>
@@ -155,17 +155,17 @@ const Footer = () => {
 						</span>
 						<div className='flex mt-4 sm:justify-center sm:mt-0 gap-10'>
 							<a
-								href='https://tailwindcss.com/'
+								href='#'
 								className='hover:underline hover:text-[#D5F590] transition'>
 								Privacy Policy
 							</a>
 							<a
-								href='https://tailwindcss.com/'
+								href='#'
 								className='hover:underline hover:text-[#D5F590] transition'>
 								Cookie Policy
 							</a>
 							<a
-								href='https://tailwindcss.com/'
+								href='#'
 								className='hover:underline hover:text-[#D5F590] transition'>
 								Terms & Conditions
 							</a>
