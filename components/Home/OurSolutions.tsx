@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Solution1 from "@/public/asset/Solution1.png";
-// import Solution2 from "@/public/asset/Solution2.png";
-import Solution2 from "@/public/asset/solutions/AquaLogix.jpg";
+import Solution2 from "@/public/asset/Solution2.png";
+// import Solution2 from "@/public/asset/solutions/AquaLogix.jpg";
 import Solution3 from "@/public/asset/solutions/SunAquator.jpg";
 import { ArrowUpRight } from "lucide-react";
 

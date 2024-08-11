@@ -19,7 +19,7 @@ const Results = () => {
 							Efficient, <br />
 							<span className='text-[#085C2C]'>Tech Driven Results.</span>
 						</p>
-						<p className='font-light w-[70%]'>
+						<p className='font-light w-[70%] '>
 							Desire Energy Solutions Pvt. Ltd. enhances India&apos;s water
 							infrastructure, achieving energy efficiency, sustainability, and
 							widespread access through innovative technologies.
@@ -36,31 +36,41 @@ const Results = () => {
 				<div className='w-1/2 h-full font-titilium flex flex-col justify-start items-end  gap-14'>
 					<div className='text-start smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-[90%] space-y-6'>
 						<div className='space-y-1'>
-							<p className='text-[min(7vw,7vh)] text-[#003300] '>1.685 Cr. +</p>
-							<p className='font-light pl-3'>Annualy Units Saved</p>
+							<p className='text-[min(7vw,7vh)]'>1,00,000</p>
+							<p className='font-light xsPhone:text-[min(3vw,3vh)] smTablet:text-[min(2.1vh,2.1vw)]'>
+								Villages & 14+ Cities Managed by Smart Water Supply System
+							</p>
 						</div>
-						<Separator className='pl-3 bg-black' />
+						<Separator className=' bg-black' />
 					</div>
 					<div className='text-start smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-[90%] space-y-6'>
 						<div className='space-y-1'>
-							<p className='text-[min(7vw,7vh)] pl-3'>50 +</p>
-							<p className='font-light pl-3'>Projects Done</p>
+							<p className='text-[min(7vw,7vh)] '>5,00,000 +</p>
+							<p className='font-light xsPhone:text-[min(3vw,3vh)] smTablet:text-[min(2.1vh,2.1vw)]'>
+								Household Functional Tap Connections
+							</p>
 						</div>
-						<Separator className='pl-3 bg-[#085C2C]' />
+						<Separator className=' bg-[#085C2C]' />
 					</div>
 					<div className='text-start smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-[90%] space-y-6'>
 						<div className='space-y-1'>
-							<p className='text-[min(7vw,7vh)] pl-3'>22 +</p>
-							<p className='font-light pl-3'>Awards & Recognitions</p>
+							<p className='text-[min(7vw,7vh)] '>35 Million</p>
+							<p className='font-light xsPhone:text-[min(3vw,3vh)] smTablet:text-[min(2.1vh,2.1vw)] '>
+								Electric Units Annual Energy Saving
+							</p>
 						</div>
-						<Separator className='pl-3 bg-[#085C2C]' />
+						<Separator className=' bg-[#085C2C]' />
 					</div>
 					<div className='text-start smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-[90%] space-y-6'>
 						<div className='space-y-1'>
-							<p className='text-[min(7vw,7vh)]'>1000 +</p>
-							<p className='font-light pl-3'>Satisfied Employees</p>
+							<p className='text-[min(7vw,7vh)]'>
+								42000 <span className='text-[min(2.5vh,2.5vw)]'>kWh</span>
+							</p>
+							<p className='font-light xsPhone:text-[min(3vw,3vh)] smTablet:text-[min(2.1vh,2.1vw)] '>
+								Annual Electricity Generation
+							</p>
 						</div>
-						<Separator className='pl-3 bg-[#085C2C]' />
+						<Separator className=' bg-[#085C2C]' />
 					</div>
 				</div>
 			</div>
