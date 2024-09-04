@@ -30,6 +30,9 @@ const config = {
 				laptop: "1490px",
 				xlLaptop: "1520px",
 				desktop: "2000px",
+				landscapes: {
+					raw: "only screen and (max-height: 600px) and (orientation: landscape)",
+				},
 			},
 			colors: {
 				border: "hsl(var(--border))",

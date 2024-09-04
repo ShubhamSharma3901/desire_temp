@@ -46,8 +46,10 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
 					"w-2/3 smLaptop:flex xsPhone:hidden flex justify-between items-center font-titilium  uppercase",
 					type === "Dark" ? "text-white" : "text-black"
 				)}>
-				<Link href={"#"} className='text-center'>
-					Home
+				<Link
+					href={`${process.env.NEXT_PUBLIC_APP_URL}/about`}
+					className='text-center'>
+					About
 				</Link>
 				<Link href={"#"} className='text-center'>
 					Company
@@ -78,9 +80,9 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
 								"w-2/3 flex flex-col justify-start items-start font-titilium gap-10  uppercase text-black"
 							)}>
 							<Link
-								href={"#"}
+								href={`${process.env.NEXT_PUBLIC_APP_URL}/about`}
 								className='text-center hover:text-[#085C2C]  transition-all hover:underline'>
-								Home
+								About
 							</Link>
 							<Link
 								href={"#"}
