@@ -1,6 +1,6 @@
 import Footer from "@/components/Home/Footer";
 import NavBar from "@/components/NavBar";
-import { Loader2 } from "lucide-react";
+
 import React, { Suspense } from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
