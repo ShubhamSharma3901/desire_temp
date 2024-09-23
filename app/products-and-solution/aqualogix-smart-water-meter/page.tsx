@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import landing_photo from "@/public/asset/products_and_solution/water_oscillations.jpg";
 import aqualogix_logo from "@/public/asset/products_and_solution/Desire-Aqualogix.webp";
+import aqualogix_creative_1 from "@/public/asset/products_and_solution/Aqualogix-creative.png";
 import { BreadcrumbItem } from "flowbite-react";
 import Image from "next/image";
 import React from "react";
@@ -126,6 +127,10 @@ const Page = () => {
 					metering technology, aligning with the industry&apos;s shift towards
 					more reliable, sustainable, and maintenance-friendly solutions.
 				</p>
+			</div>
+
+			<div className='w-[85%]'>
+				<Image src={aqualogix_creative_1} alt='' />
 			</div>
 
 			<div className='my-20 flex flex-col justify-start items-center font-titilium text-start w-[85%] space-y-10 bg-[#F4F4F4]  py-16 relative overflow-clip'>
