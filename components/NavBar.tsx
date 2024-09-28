@@ -106,7 +106,51 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
           </DropdownMenu>
         </Link>
         <Link href={"#"} className="text-center">
-          Services
+          <DropdownMenu>
+            <DropdownMenuTrigger
+              className={"flex justify-center items-center gap-2 uppercase"}
+            >
+              Services <ChevronDown />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className={"font-titilium p-4 space-y-2"}>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)] "}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/services/esco `}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  ESCO
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/services/smart-epc`}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Smart EPC
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/services/decentralized-water-management`}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Decentralized Water Management
+                </Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/services/operation-and-maintenance`}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Operation and Maintenance
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </Link>
         <Link href={"#"} className="text-center">
           Innovation Hub
@@ -171,12 +215,43 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </AccordionItem>
               </Accordion>
 
-              <Link
-                href={"#"}
-                className="text-center hover:text-[#085C2C]  transition-all hover:underline"
-              >
-                Services
-              </Link>
+              <Accordion type="single" collapsible className={"w-full"}>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Services</AccordionTrigger>
+                  <AccordionContent
+                    className={
+                      "flex flex-col no-underline gap-10 p-4 bg-neutral-100 rounded-sm"
+                    }
+                  >
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/services/esco `}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      ESCO
+                    </Link>
+
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/services/smart-epc`}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      Smart EPC
+                    </Link>
+
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/services/decentralized-water-management`}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      Decentralized Water Management
+                    </Link>
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/services/operation-and-maintenance`}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      Operation and Maintenance
+                    </Link>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
               <Link
                 href={"#"}
                 className="text-center hover:text-[#085C2C]  transition-all hover:underline"
