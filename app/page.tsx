@@ -13,67 +13,73 @@ import ReshapingSus from "@/components/Home/Sustainability";
 import Footer from "@/components/Home/Footer";
 import Blogs from "@/components/Home/Blogs";
 import Marque from "@/components/Home/Marquee";
+import Link from "next/link";
+
 export default function Home() {
-	return (
-		<>
-			<div className='h-screen w-screen relative overflow-clip'>
-				<div className='absolute z-10 w-full flex justify-center items-center top-[2rem]'>
-					<NavBar type='Dark' />
-				</div>
-				<Carousel
-					className=''
-					theme={{
-						scrollContainer: {
-							base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth",
-						},
-						item: {
-							wrapper: {
-								on: "w-full flex-shrink-0 transform cursor-default snap-center",
-							},
-						},
-					}}>
-					<div className='h-full w-full relative'>
-						<Image
-							src={landingImage}
-							alt=''
-							className='w-full h-screen object-cover absolute'
-						/>
-						<div className='absolute z-[1] text-white font-figtree xsPhone:text-[min(9vh,9vw)] smTablet:text-[min(7vh,7vw)] font-semibold tracking-wide bottom-[22%] left-[6%] space-y-[3rem]'>
-							<p>
-								Integrated Water Management
-								<br /> & Energy Efficiency Services.
-							</p>
-							<button className='smTablet:text-[min(2vh,2vw)]  xsPhone:text-[min(3vh,3vw)] xsPhone:py-2 bg-[#D5F590] text-[#085C2C] tracking-normal font-normal flex justify-center items-center py-3 px-6 gap-1 hover:bg-[#D5F590] hover:text-[#003300] transition'>
-								Know More{" "}
-								<ArrowUpRight
-									className='h-auto xsPhone:w-5 smLaptop:w-7 smTablet:w-6'
-									strokeWidth={1.4}
-								/>
-							</button>
-						</div>
-					</div>
-				</Carousel>
-				<div className='bg-white absolute z-[1] p-10 smTablet:w-[min(40vw,40vh)] smLaptop:w-[min(50vw,50vh)] right-0 bottom-0 font-titilium space-y-5 smTablet:pl-14'>
-					<div className='flex justify-start items-end'>
-						<p className='xsPhone:text-[min(5vh,5vw)] smTablet:text-[min(4vh,4vw)] relative w-fit'>
-							Let&apos;s work <br /> together.{" "}
-						</p>
-						<hr className='relative smTablet:block xsPhone:hidden bottom-[1.5rem] right-0 h-1 w-[30%] bg-[#085C2C]' />
-					</div>
-					<p className='smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(3.5vh,3.5vw)] font-light'>
-						Contact Us
-					</p>
-				</div>
-			</div>
-			<Youtube />
-			<MissionVision />
-			<OurServices />
-			<Solutions />
-			<Results />
-			<ReshapingSus />
-			<Blogs />
-			<Marque />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <div className="h-screen w-screen relative overflow-clip">
+        <div className="absolute z-10 w-full flex justify-center items-center top-[2rem]">
+          <NavBar type="Dark" />
+        </div>
+        <Carousel
+          className=""
+          theme={{
+            scrollContainer: {
+              base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth",
+            },
+            item: {
+              wrapper: {
+                on: "w-full flex-shrink-0 transform cursor-default snap-center",
+              },
+            },
+          }}
+        >
+          <div className="h-full w-full relative">
+            <Image
+              src={landingImage}
+              alt=""
+              className="w-full h-screen object-cover absolute"
+            />
+            <div className="absolute z-[1] text-white font-figtree xsPhone:text-[min(9vh,9vw)] smTablet:text-[min(7vh,7vw)] font-semibold tracking-wide bottom-[22%] left-[6%] space-y-[3rem]">
+              <p>
+                Integrated Water Management
+                <br /> & Energy Efficiency Services.
+              </p>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_APP_URL}/about`}
+                className="smTablet:text-[min(2vh,2vw)] w-fit xsPhone:text-[min(3vh,3vw)] xsPhone:py-2 bg-[#D5F590] text-[#085C2C] tracking-normal font-normal flex justify-center items-center py-3 px-6 gap-1 hover:bg-[#D5F590] hover:text-[#003300] transition"
+              >
+                Know More{" "}
+                <ArrowUpRight
+                  className="h-auto xsPhone:w-5 smLaptop:w-7 smTablet:w-6"
+                  strokeWidth={1.4}
+                />
+              </Link>
+            </div>
+          </div>
+        </Carousel>
+        <div className="bg-white absolute z-[1] p-10 smTablet:w-[min(40vw,40vh)] smLaptop:w-[min(50vw,50vh)] right-0 bottom-0 font-titilium space-y-5 smTablet:pl-14">
+          <div className="flex justify-start items-end">
+            <p className="xsPhone:text-[min(5vh,5vw)] smTablet:text-[min(4vh,4vw)] relative w-fit">
+              Let&apos;s work <br /> together.{" "}
+            </p>
+            <hr className="relative smTablet:block xsPhone:hidden bottom-[1.5rem] right-0 h-1 w-[30%] bg-[#085C2C]" />
+          </div>
+          <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(3.5vh,3.5vw)] font-light">
+            Contact Us
+          </p>
+        </div>
+      </div>
+      <Youtube />
+      <MissionVision />
+      <OurServices />
+      <Solutions />
+      <Results />
+      <ReshapingSus />
+      <Blogs />
+      <Marque />
+      <Footer />
+    </>
+  );
 }

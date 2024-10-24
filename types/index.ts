@@ -16,3 +16,24 @@ export type blogs = {
   slug: { current: string };
   _id: string;
 };
+
+export type photos = {
+  title: string;
+  mainImage: any;
+  _id: string;
+};
+
+export type Jobs = {
+  profile: string;
+  designation: string;
+  jobSpecification: string[];
+  experience: string;
+  location: string;
+};
+
+export type team = {
+  name: string;
+  designation: string;
+  about: string;
+  mainImage: SanityImageSource;
+};

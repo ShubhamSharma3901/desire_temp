@@ -62,7 +62,45 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
           About
         </Link>
         <Link href={"#"} className="text-center">
-          Company
+          <DropdownMenu>
+            <DropdownMenuTrigger
+              className={"flex justify-center items-center gap-2 uppercase"}
+            >
+              Company <ChevronDown />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className={"font-titilium p-4 space-y-2"}>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)] "}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/life-at-desire `}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Life@Desire
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/csr`}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  CSR
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/awards`}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Awards and Recognition
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </Link>
         <Link href={"#"} className="text-center">
           <DropdownMenu>
@@ -142,6 +180,10 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 >
                   Decentralized Water Management
                 </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+              >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/services/operation-and-maintenance`}
                   className={"hover:text-[#085C2C]"}
@@ -152,10 +194,22 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
             </DropdownMenuContent>
           </DropdownMenu>
         </Link>
-        <Link href={"#"} className="text-center">
+        <Link
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/innovationhub`}
+          className="text-center"
+        >
           Innovation Hub
         </Link>
-        <Link href={"#"} className="text-center">
+        <Link
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/blogs`}
+          className="text-center"
+        >
+          Blogs
+        </Link>
+        <Link
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/contact`}
+          className="text-center"
+        >
           Contact Us
         </Link>
       </div>
@@ -178,12 +232,35 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
               >
                 About
               </Link>
-              <Link
-                href={"#"}
-                className="text-center hover:text-[#085C2C]  transition-all hover:underline"
-              >
-                Company
-              </Link>
+              <Accordion type="single" collapsible className={"w-full"}>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Company</AccordionTrigger>
+                  <AccordionContent
+                    className={
+                      "flex flex-col no-underline gap-10 p-4 bg-neutral-100 rounded-sm"
+                    }
+                  >
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/life-at-desire`}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      Life@Desire
+                    </Link>
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/csr`}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      CSR
+                    </Link>
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_APP_URL}/awards`}
+                      className={"hover:text-[#085C2C]"}
+                    >
+                      Awards and Recognition
+                    </Link>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
 
               <Accordion type="single" collapsible className={"w-full"}>
                 <AccordionItem value="item-1">
@@ -253,13 +330,19 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </AccordionItem>
               </Accordion>
               <Link
-                href={"#"}
+                href={`${process.env.NEXT_PUBLIC_APP_URL}/innovationhub`}
                 className="text-center hover:text-[#085C2C]  transition-all hover:underline"
               >
                 Innovation Hub
               </Link>
               <Link
-                href={"#"}
+                href={`${process.env.NEXT_PUBLIC_APP_URL}/blogs`}
+                className="text-center hover:text-[#085C2C]  transition-all hover:underline"
+              >
+                Blogs
+              </Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_APP_URL}/contact`}
                 className="text-center hover:text-[#085C2C]  transition-all hover:underline"
               >
                 Contact Us
