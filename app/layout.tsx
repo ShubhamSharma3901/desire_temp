@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Desire Energies Pvt. Ltd",
-    template: " %s | Desire Energies Pvt. Ltd",
+    default: "Desire Energy Solutions Pvt. Ltd",
+    template: " %s | Desire Energy Solutions Pvt. Ltd",
   },
   description: `Desire Energy Solutions Pvt Ltd, headquartered in Jaipur, is a
   nationally acclaimed tech-driven water management company. It

@@ -27,13 +27,13 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
   return (
     <div
       className={cn(
-        "w-[85%] bg-transparent flex justify-evenly items-center ",
+        "smLaptop:w-[90%] tablet:w-[95%] xsPhone:w-[85%] bg-transparent flex justify-evenly items-center ",
         type === "Dark" ? "bg-transparent" : "bg-white",
       )}
     >
       <Link
         href={`${process.env.NEXT_PUBLIC_APP_URL}`}
-        className="smLaptop:w-1/3 xsPhone:w-full  flex justify-start items-center"
+        className="smLaptop:w-[20%] xsPhone:w-full  flex justify-start items-center"
       >
         {type === "Dark" ? (
           <Image
@@ -51,7 +51,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
       </Link>
       <div
         className={cn(
-          "w-2/3 smLaptop:flex xsPhone:hidden flex justify-between items-center font-titilium  uppercase",
+          "w-[80%] smLaptop:flex xsPhone:hidden flex justify-between items-center font-titilium  uppercase",
           type === "Dark" ? "text-white" : "text-black",
         )}
       >
