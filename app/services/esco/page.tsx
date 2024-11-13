@@ -196,7 +196,7 @@ const Page = () => {
                   &nbsp;ESCO?
                 </span>
               </p>
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)]">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.7vh,2.7vw)]">
                 We are leading player, out of very few “ESCO Company” which are
                 certified by Bureau of Energy Efficiency (BEE), working globally
                 towards energy conservation in water infrastructure field. With

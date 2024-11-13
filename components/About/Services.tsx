@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div className="space-y-20 flex flex-col justify-center items-center">
       <div className="space-y-5">
-        <h1 className="font-titilium text-[#085C2C] smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(3.5vh,3.5vw)] smLaptop:text-[min(3vh,3vw)] text-[min(6vh,6vw)] text-center">
+        <h1 className="font-titilium text-[#085C2C] smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(3.5vh,3.5vw)] smLaptop:text-[min(3.5vh,3.5vw)] text-[min(6vh,6vw)] text-center">
           Innovation, Quality And Continuous Improvement
         </h1>
         <h1 className="font-titilium smTablet:text-[min(4vh,4vw)] xsPhone:text-[min(5.2vh,5.2vw)] smLaptop:text-[min(5vh,5vw)] text-[min(6vh,6vw)] text-center">
@@ -26,7 +26,7 @@ const Services = () => {
           <div className="border bg-white flex flex-col justify-start items-start gap-6 py-10">
             <Image src={ESCO} alt="ESCO" className="w-20 h-auto ml-6" />
             <div className="font-titilium font-semibold ml-6 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+              <p className="smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
                 ESCO
               </p>
             </div>
@@ -41,7 +41,7 @@ const Services = () => {
           <div className="border bg-white flex flex-col justify-start items-start gap-6 py-10">
             <Image src={EPC} alt="EPC" className="w-20 h-auto ml-6" />
             <div className="font-titilium font-semibold ml-6 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+              <p className="smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
                 Smart EPC
               </p>
             </div>
@@ -57,7 +57,7 @@ const Services = () => {
           <div className="border bg-white flex flex-col justify-start items-start gap-6 py-10">
             <Image src={DWM} alt="DWM" className="w-20 h-auto ml-6" />
             <div className="font-titilium font-semibold ml-6 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+              <p className="smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
                 Decentralised Water <br />
                 Management
               </p>
@@ -74,8 +74,9 @@ const Services = () => {
           <div className="border bg-white flex flex-col justify-start items-start gap-6 py-10">
             <Image src={OM} alt="OM" className="w-20 h-auto ml-6" />
             <div className="font-titilium font-semibold ml-6 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
-                Operations & Maintenance
+              <p className="smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+                Operations & <br />
+                Maintenance
               </p>
             </div>
             <div className="font-titilium text-black/50 ml-6 w-[80%]">

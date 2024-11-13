@@ -23,6 +23,91 @@ import SanityImage from "@/components/ui/SanityImage";
 import { BriefcaseBusiness, Mail } from "lucide-react";
 import Link from "next/link";
 
+const ImageCarousel = ({ images }: { images: any }) => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const nextSlide = () => {
+    if (currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const prevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  return (
+    <div className="relative w-full overflow-clip flex justify-start items-center">
+      {images && images.length !== 0 ? (
+        <div
+          style={{
+            transform: `translateX(${(-currentIndex * 100) / images.length}%)`,
+          }}
+          className="flex h-fit justify-center items-center smLaptop:max-h-[70vh] xsPhone:max-h-[50vh]  transition-transform duration-500 ease-in-out gap-4"
+        >
+          {images!.map((img: photos, idx: any) => {
+            return (
+              <Dialog key={idx}>
+                <DialogTrigger
+                  className={
+                    "relative group smLaptop:w-[50vw] xsPhone:w-[100vw] "
+                  }
+                >
+                  <SanityImage key={idx} src={img.mainImage} className={""} />
+                  <div
+                    className={
+                      "absolute bottom-0 w-full p-4 text-center font-titilium text-md text-white hidden group-hover:block bg-[#085C2C]/50 transition"
+                    }
+                  >
+                    {img.title}
+                  </div>
+                </DialogTrigger>
+                <DialogContent
+                  className={
+                    "bg-transparent text-white border-0 min-w-[80vw] h-auto"
+                  }
+                >
+                  <SanityImage
+                    key={idx}
+                    src={img.mainImage}
+                    className={"w-full h-full"}
+                  />
+                </DialogContent>
+              </Dialog>
+            );
+          })}
+        </div>
+      ) : (
+        <Skeleton className="w-full h-[300px] bg-white" />
+      )}
+
+      <button
+        onClick={prevSlide}
+        disabled={currentIndex === 0}
+        className={`absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ${
+          currentIndex === 0
+            ? "bg-gray-400 text-[25px] border-r shadow-2xl"
+            : "bg-[#D5F590] text-green-600  text-[25px] border-r shadow-2xl"
+        }`}
+      >
+        ‹
+      </button>
+      <button
+        onClick={nextSlide}
+        disabled={currentIndex === images.length - 1}
+        className={`absolute right-0 top-1/2 transform -translate-y-1/2 p-2 ${
+          currentIndex === images.length - 1
+            ? "bg-gray-400 text-[25px] border-r shadow-2xl"
+            : "bg-[#D5F590] text-green-600  text-[25px] border-r shadow-2xl"
+        }`}
+      >
+        ›
+      </button>
+    </div>
+  );
+};
 const ImageComponent = (props: ThumbnailImageProps) => {
   return (
     <div className={"w-full h-full"}>
@@ -128,26 +213,26 @@ const Page = () => {
                 together.
               </p>
               <br />
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(4.2vh,4.2vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
                 We are a team of 2000+ people and every one of us is passionate
                 about solving the water management problem. Our work culture
                 promotes innovative ideas, leadership and new learnings. We
                 provide a productive and cheerful environment for all of us to
                 grow together as better human beings and better professionals.
               </p>
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(4.2vh,4.2vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
                 We are the leading Innovator in integrated water Management and
                 efficient products & services to manage water efficiently, and
                 equally among all.
               </p>
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(4.2vh,4.2vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
                 We are leading the digital transformation of water management,
                 automation and solar energy. We make it possible for IoT-enabled
                 solutions to seamlessly connect, collect, analyse and act on
                 data in real-time delivering enhanced safety, efficiency,
                 reliability, and sustainability.
               </p>
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(4.2vh,4.2vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
                 We empower everyone to make the most of their energy and
                 resources, ensuring to have Passionate but happy Life for
                 everyone, at every moment. Along the way, we create and provide
@@ -155,7 +240,7 @@ const Page = () => {
                 create an inclusive environment and welcome people from all over
                 the world.
               </p>{" "}
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(4.2vh,4.2vw)] smTablet:text-[min(2.5vh,2.5vw)] leading-relaxed">
                 It&apos;s a family of 1000+ technocrats from different streams
                 and life, to achieve a common goal of sustainability by
                 delivering efficient & integrated water management innovative
@@ -168,7 +253,7 @@ const Page = () => {
 
       <div
         className={
-          "h-full space-y-10 smLaptop:w-[87%] xsPhone:w-full flex flex-col justify-center items-center pb-20"
+          "h-full space-y-16 smLaptop:w-[87%] xsPhone:w-full flex flex-col justify-center items-center pb-20"
         }
       >
         <p className="text-[#085C2C] xsPhone:text-[min(6vh,6vw)] smTablet:text-[min(5.3vh,5.3vw)] font-titilium text-center">
@@ -181,45 +266,46 @@ const Page = () => {
           //   enableImageSelection={false}
           //   thumbnailImageComponent={ImageComponent}
           // />
-          <div
-            className={
-              "grid smLaptop:grid-cols-3 xsPhone:grid-cols-1 smTablet:grid-cols-2 gap-2 xsPhone:w-[85%] smLaptop:w-full"
-            }
-          >
-            {images &&
-              images?.length !== 0 &&
-              images!.map((img: photos, idx) => {
-                return (
-                  <Dialog key={idx}>
-                    <DialogTrigger className={"relative group"}>
-                      <SanityImage
-                        key={idx}
-                        src={img.mainImage}
-                        className={""}
-                      />
-                      <div
-                        className={
-                          "absolute bottom-0 w-full p-4 text-center font-titilium text-md text-white hidden group-hover:block bg-[#085C2C]/50 transition"
-                        }
-                      >
-                        {img.title}
-                      </div>
-                    </DialogTrigger>
-                    <DialogContent
-                      className={
-                        "bg-transparent text-white border-0 min-w-[80vw] h-auto"
-                      }
-                    >
-                      <SanityImage
-                        key={idx}
-                        src={img.mainImage}
-                        className={"w-full h-full"}
-                      />
-                    </DialogContent>
-                  </Dialog>
-                );
-              })}
-          </div>
+          // <div
+          //   className={
+          //     "grid smLaptop:grid-cols-3 xsPhone:grid-cols-1 smTablet:grid-cols-2 gap-2 xsPhone:w-[85%] smLaptop:w-full"
+          //   }
+          // >
+          //   {images &&
+          //     images?.length !== 0 &&
+          //     images!.map((img: photos, idx) => {
+          //       return (
+          //         <Dialog key={idx}>
+          //           <DialogTrigger className={"relative group"}>
+          //             <SanityImage
+          //               key={idx}
+          //               src={img.mainImage}
+          //               className={""}
+          //             />
+          //             <div
+          //               className={
+          //                 "absolute bottom-0 w-full p-4 text-center font-titilium text-md text-white hidden group-hover:block bg-[#085C2C]/50 transition"
+          //               }
+          //             >
+          //               {img.title}
+          //             </div>
+          //           </DialogTrigger>
+          //           <DialogContent
+          //             className={
+          //               "bg-transparent text-white border-0 min-w-[80vw] h-auto"
+          //             }
+          //           >
+          //             <SanityImage
+          //               key={idx}
+          //               src={img.mainImage}
+          //               className={"w-full h-full"}
+          //             />
+          //           </DialogContent>
+          //         </Dialog>
+          //       );
+          //     })}
+          // </div>
+          <ImageCarousel images={images} />
         ) : (
           <Skeleton className={"w-full h-[300px]"} />
         )}
@@ -287,10 +373,14 @@ const Page = () => {
                       </div>
                     </div>
 
-                    <div className={"text-[min(3.5vh,3.5vw)]"}>
+                    <div
+                      className={
+                        "smTablet:text-[min(3.5vh,3.5vw)] xsPhone:text-[min(5vh,5vw)]"
+                      }
+                    >
                       {job.profile}
                     </div>
-                    <div className={"space-y-2"}>
+                    <div className={"space-y-2 text-gray-500"}>
                       {job.jobSpecification.map((spec, idx) => {
                         return <div key={idx}>{spec}</div>;
                       })}

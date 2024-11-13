@@ -8,11 +8,94 @@ import CoreValues from "@/components/About/CoreValues";
 import headerImage from "@/public/asset/aboutPage/AboutPageCreative.png";
 import Services from "@/components/About/Services";
 import { team } from "@/types";
-import Link from "next/link";
-import { Mail } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import axios from "axios";
 import SanityImage from "@/components/ui/SanityImage";
+import gauravgupta from "@/public/asset/aboutPage/MrGauravGupta.avif";
+
+const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const nextSlide = () => {
+    if (currentIndex < team.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const prevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  return (
+    <div className="relative w-full h-full overflow-hidden flex items-center">
+      {team && team.length !== 0 && loaded ? (
+        <div
+          style={{
+            transform: `translateX(-${(currentIndex * 100) / team.length}%)`,
+          }}
+          className="flex transition-transform duration-500 ease-in-out gap-4"
+        >
+          {team.map((member: any, idx: any) => (
+            <div
+              key={idx}
+              className={`bg-white font-titilium flex flex-col justify-start  items-start gap-10`}
+            >
+              <div
+                className={"flex flex-col justify-start items-start gap-6 pb-6"}
+              >
+                <div className={"w-[300px] h-[300px] overflow-clip"}>
+                  <SanityImage
+                    src={member.mainImage}
+                    className={"w-full min-h-full object-cover "}
+                  />
+                </div>
+
+                <div
+                  className={"flex flex-col justify-center items-start px-6"}
+                >
+                  <h1
+                    className={
+                      "smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+                    }
+                  >
+                    {member.name}
+                  </h1>
+                  <p className={"text-gray-500"}>{member.designation}</p>
+                </div>
+                <p className={"px-6 text-neutral-600"}>{member.about}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <Skeleton className="w-full h-[300px] bg-white" />
+      )}
+
+      <button
+        onClick={prevSlide}
+        disabled={currentIndex === 0}
+        className={`absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ${
+          currentIndex === 0 ? "bg-gray-400" : "bg-gray-700 text-white"
+        }`}
+      >
+        ‹
+      </button>
+      <button
+        onClick={nextSlide}
+        disabled={currentIndex === team.length - 1}
+        className={`absolute right-0 top-1/2 transform -translate-y-1/2 p-2 ${
+          currentIndex === team.length - 1
+            ? "bg-gray-400"
+            : "bg-gray-700 text-white"
+        }`}
+      >
+        ›
+      </button>
+    </div>
+  );
+};
 
 const Page = () => {
   let [team, setTeam] = useState<team[]>();
@@ -28,6 +111,7 @@ const Page = () => {
         console.log(err);
       });
   }, []);
+
   return (
     <div className="relative w-screen flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center w-full pt-4">
@@ -42,8 +126,8 @@ const Page = () => {
             <p>
               Desire Energy Solutions Pvt Ltd, headquartered in Jaipur, is a
               nationally acclaimed tech-driven water management company. It
-              specializes in IoT, AI, and renewable energy solutions for public
-              water infrastructure projects across India.
+              specializes in IoT, AI, based renewable energy solutions for
+              public water infrastructure projects across India.
             </p>
           </div>
         </div>
@@ -112,12 +196,54 @@ const Page = () => {
             </div>
           </div>
 
+          <div className={"flex gap-10 xsPhone:flex-col smLaptop:flex-row"}>
+            <Image
+              src={gauravgupta}
+              alt={""}
+              className={"smLaptop:w-[50%] xsPhone:w-full h-auto"}
+            />
+            <div className={"flex flex-col gap-10"}>
+              <div className={"space-y-3"}>
+                <p
+                  className={
+                    "smTablet:text-[min(5vh,5vw)] xsPhone:text-[min(7vh,7vw)] font-titilium text-[#085C2C]"
+                  }
+                >
+                  Mr. Gaurav Gupta
+                </p>
+                <p
+                  className={
+                    "smTablet:text-[min(2.6vh,2.6vw)] xsPhone:text-[min(4vh,4vw)] font-light font-titilium"
+                  }
+                >
+                  Founder and Managing Director
+                </p>
+              </div>
+              <div
+                className={
+                  "font-figtree smTablet:text-[min(2.3vh,2.3vw)] xsPhone:text-[min(3.7vh,3.7vw)] text-gray-600 font-light"
+                }
+              >
+                Gaurav Kumar Gupta, co-founder and managing director of Desire
+                Energy Solutions Pvt. Ltd, directs the company&apos;s strategic
+                vision and leadership, focusing on advancing efficient water
+                management infrastructure in India. Since founding Desire Energy
+                in 2011, he has overseen its growth in implementing water
+                projects across ESCO, RO, EPC, IoT, and Solar sectors, garnering
+                significant recognition. Committed to mentoring, Gaurav supports
+                aspiring entrepreneurs to make a meaningful impact globally.
+              </div>
+            </div>
+          </div>
+
+          {team && <TeamCarousel team={team} loaded={loaded} />}
+
           <div
             className={
               "grid smLaptop:grid-cols-4 xsPhone:grid-cols-1 smTablet:grid-cols-3 gap-10 "
             }
           >
-            {team && team.length != 0 && loaded ? (
+            {/* {team && team.length != 0 && loaded ? (
               team.map((team: team, idx) => {
                 return (
                   <div
@@ -153,7 +279,7 @@ const Page = () => {
               })
             ) : (
               <Skeleton className={"w-full h-[300px] bg-white"} />
-            )}
+            )} */}
           </div>
         </div>
       </div>
