@@ -17,7 +17,7 @@ const Acordian = () => {
     };
   return (
     <div>
-      <div className="mb-[2.5rem] flex flex-col gap-5 smLaptop:flex-row smLaptop:mt-[4rem] md:mt-[2rem] px-10">
+      <div className="my-[2.5rem] flex xsPhone:flex-col xsPhone:gap-10 smLaptop:gap-5 smLaptop:flex-row smLaptop:mt-[4rem] md:mt-[2rem] px-10">
         {/* left */}
         <div className="smLaptop:w-[50%] xsPhone:w-full">
           <Image
@@ -28,7 +28,7 @@ const Acordian = () => {
         </div>
 
         {/* right */}
-        <div className="font-titilium pl-[2rem] border-none flex flex-col gap-5 smLaptop:w-[50%] smLaptop:mt-[1.4rem] smLaptop:flex smLaptop:flex-col smLaptop:gap-4">
+        <div className="font-titilium smLaptop:pl-[2rem] border-none flex flex-col gap-5 smLaptop:w-[50%] smLaptop:mt-[1.4rem] smLaptop:flex smLaptop:flex-col smLaptop:gap-4">
           <div className="text-center  font-titilium text-[min(7vh,7vw)] mb-2">
             Salient Features
           </div>

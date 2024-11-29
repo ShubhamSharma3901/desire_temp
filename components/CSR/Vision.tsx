@@ -29,9 +29,6 @@ const Vision = () => {
         <p className="font-light xsPhone:text-[min(6vh,6vw)] smTablet:text-[min(5vh,5vw)] font-titilium text-center">
           Empowering Communities, Enriching Lives
         </p>
-        {/*<p className=' mb-[3rem] font-bold text-[min(4.6vh,4.6vw)] smLaptop:text-[min(5vh,5vw)] font-titilium smLaptop:mb-[2rem]' >*/}
-
-        {/*</p>*/}
       </div>
 
       <div className="container mx-auto px-4  md:mb-[4rem] tablet:mt-[2rem]">
