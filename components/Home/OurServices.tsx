@@ -37,89 +37,117 @@ const OurServices = () => {
           </div>
         </div>
         <div className="grid smTablet:grid-cols-2 xsPhone:grid-cols-1 h-full">
-          <div className="border flex flex-col justify-start items-start gap-6 py-10">
-            <Image src={ESCO} alt="ESCO" className="w-20 h-auto ml-6" />
-            <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
-                ESCO
-              </p>
+          <Link
+            href={`${process.env.NEXT_PUBLIC_APP_URL}/services/esco`}
+            className={"group"}
+          >
+            <div className="border flex flex-col justify-start items-start gap-6 py-10 group-hover:scale-95 transition">
+              <Image src={ESCO} alt="ESCO" className="w-20 h-auto ml-6" />
+              <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
+                <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+                  ESCO
+                </p>
+              </div>
+              <div className="font-titilium text-black/50 ml-10 w-[80%]">
+                <p>
+                  Desire Energy Solutions Pvt Ltd, a BEE-certified ESCO, excels
+                  in global energy conservation for water infrastructure, saving
+                  millions of electric units and billions of water liters
+                  annually.
+                </p>
+              </div>
             </div>
-            <div className="font-titilium text-black/50 ml-10 w-[80%]">
-              <p>
-                Desire Energy Solutions Pvt Ltd, a BEE-certified ESCO, excels in
-                global energy conservation for water infrastructure, saving
-                millions of electric units and billions of water liters
-                annually.
-              </p>
+          </Link>
+          <Link
+            href={`${process.env.NEXT_PUBLIC_APP_URL}/services/smart-epc`}
+            className={"group"}
+          >
+            <div className="border flex flex-col justify-start items-start gap-6 py-10 group-hover:scale-95 transition">
+              <Image src={EPC} alt="EPC" className="w-20 h-auto ml-8" />
+              <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
+                <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+                  Smart EPC
+                </p>
+              </div>
+              <div className="font-titilium text-black/50 ml-10 w-[80%]">
+                <p>
+                  Desire Energy Solutions transforms conventional water
+                  infrastructure projects into smart, efficient systems using
+                  advanced management tools, tech solutions, and sustainable
+                  designs.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="border flex flex-col justify-start items-start gap-6 py-10">
-            <Image src={EPC} alt="EPC" className="w-20 h-auto ml-8" />
-            <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
-                Smart EPC
-              </p>
+          </Link>
+          <Link
+            href={`${process.env.NEXT_PUBLIC_APP_URL}/services/decentralized-water-management`}
+            className={"group"}
+          >
+            <div className="border flex flex-col justify-start items-start gap-6 py-10 group-hover:scale-95 transition">
+              <Image src={DWM} alt="DWM" className="w-20 h-auto ml-10" />
+              <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
+                <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+                  Decentralised Water <br />
+                  Management
+                </p>
+              </div>
+              <div className="font-titilium text-black/50 ml-10 w-[80%]">
+                <p>
+                  Desire Energy Solutions provides innovative,
+                  electricity-independent water solutions, saving lives in
+                  remote areas through solar DFU units, RO systems, and
+                  ATM-based dispensers.
+                </p>
+              </div>
             </div>
-            <div className="font-titilium text-black/50 ml-10 w-[80%]">
-              <p>
-                Desire Energy Solutions transforms conventional water
-                infrastructure projects into smart, efficient systems using
-                advanced management tools, tech solutions, and sustainable
-                designs.
-              </p>
+          </Link>
+
+          <Link
+            href={`${process.env.NEXT_PUBLIC_APP_URL}/services/operation-and-maintenance`}
+            className={"group"}
+          >
+            <div className="border flex flex-col justify-start items-start gap-6 py-10 group-hover:scale-95 transition h-full">
+              <Image src={OM} alt="OM" className="w-20 h-auto ml-8" />
+              <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
+                <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+                  Operations & Maintenance
+                </p>
+              </div>
+              <div className="font-titilium text-black/50 ml-10 w-[80%]">
+                <p>
+                  Effective operations and maintenance optimize energy,
+                  chemical, and water consumption, enhance asset management,
+                  reduce unplanned shutdowns, and extend equipment lifespan.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="border flex flex-col justify-start items-start gap-6 py-10">
-            <Image src={DWM} alt="DWM" className="w-20 h-auto ml-10" />
-            <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
-                Decentralised Water <br />
-                Management
-              </p>
+          </Link>
+
+          <Link
+            href={`${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/aqualogix-automation-solution`}
+            className={"group"}
+          >
+            <div className="border flex flex-col justify-start items-start gap-6 py-10 group-hover:scale-95 transition">
+              <Image
+                src={aquaLogix}
+                alt="AquaLogix"
+                className="w-[7rem] h-auto ml-10"
+              />
+              <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
+                <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
+                  AquaLogix
+                </p>
+              </div>
+              <div className="font-titilium text-black/50 ml-10 w-[80%]">
+                <p>
+                  AquaLogix, an IoT-based web, and mobile software, offers live
+                  data monitoring, GIS tagging, WIMS simulations, and complaint
+                  management for comprehensive water project management.
+                </p>
+              </div>
             </div>
-            <div className="font-titilium text-black/50 ml-10 w-[80%]">
-              <p>
-                Desire Energy Solutions provides innovative,
-                electricity-independent water solutions, saving lives in remote
-                areas through solar DFU units, RO systems, and ATM-based
-                dispensers.
-              </p>
-            </div>
-          </div>
-          <div className="border flex flex-col justify-start items-start gap-6 py-10">
-            <Image src={OM} alt="OM" className="w-20 h-auto ml-8" />
-            <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
-                Operations & Maintenance
-              </p>
-            </div>
-            <div className="font-titilium text-black/50 ml-10 w-[80%]">
-              <p>
-                Effective operations and maintenance optimize energy, chemical,
-                and water consumption, enhance asset management, reduce
-                unplanned shutdowns, and extend equipment lifespan.
-              </p>
-            </div>
-          </div>
-          <div className="border flex flex-col justify-start items-start gap-6 py-10">
-            <Image
-              src={aquaLogix}
-              alt="AquaLogix"
-              className="w-[7rem] h-auto ml-10"
-            />
-            <div className="font-titilium font-semibold ml-10 text-[min(3vh,3vw)]">
-              <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4.5vh,4.5vw)]">
-                AquaLogix
-              </p>
-            </div>
-            <div className="font-titilium text-black/50 ml-10 w-[80%]">
-              <p>
-                AquaLogix, an IoT-based web, and mobile software, offers live
-                data monitoring, GIS tagging, WIMS simulations, and complaint
-                management for comprehensive water project management.
-              </p>
-            </div>
-          </div>
+          </Link>
+
           <div className="border flex flex-col relative justify-between bg-[#085C2C] items-start gap-10 py-10 overflow-x-clip">
             <Image
               src={DesireLogo}

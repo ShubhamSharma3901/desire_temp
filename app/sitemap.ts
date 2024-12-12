@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/aqualogix-smart-water-meter`,
     },
     {
-      url: `${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/sunaquator-solar-power-plant`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/sunaquator-solar-pump-controller`,
     },
     {
       url: `${process.env.NEXT_PUBLIC_APP_URL}/services/decentralized-water-management`,

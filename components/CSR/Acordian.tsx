@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import CSR102 from "@/public/asset/CSR102.png";
+import CSR102 from "@/public/asset/csr/CSR13.jpeg";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
