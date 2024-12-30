@@ -27,31 +27,31 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
   return (
     <div
       className={cn(
-        "smLaptop:w-[90%] tablet:w-[95%] xsPhone:w-[85%] bg-transparent flex justify-evenly items-center ",
+        "smLaptop:w-[90%] tablet:w-[95%] xsPhone:w-[85%] bg-transparent flex justify-between items-center ",
         type === "Dark" ? "bg-transparent" : "bg-white",
       )}
     >
       <Link
         href={`${process.env.NEXT_PUBLIC_APP_URL}`}
-        className="smLaptop:w-[20%] xsPhone:w-full  flex justify-start items-center"
+        className="smLaptop:w-[30%] xsPhone:w-full  flex justify-start items-center"
       >
         {type === "Dark" ? (
           <Image
             src={logo}
             alt=""
-            className="smTablet:w-[min(24vw,24vh)] xsPhone:w-[min(40vh,40vw)] h-auto"
+            className="smTablet:w-[min(30vw,30vh)] xsPhone:w-[min(40vh,40vw)] h-auto"
           />
         ) : (
           <Image
             src={logoGreen}
             alt=""
-            className="smTablet:w-[min(24vw,24vh)] xsPhone:w-[min(40vh,40vw)] h-auto"
+            className="smTablet:w-[min(30vw,30vh)] xsPhone:w-[min(40vh,40vw)] h-auto"
           />
         )}
       </Link>
       <div
         className={cn(
-          "w-[80%] smLaptop:flex xsPhone:hidden flex justify-between items-center font-titilium  uppercase",
+          "w-[70%] smLaptop:flex xsPhone:hidden flex justify-between items-center font-titilium  uppercase text-lg",
           type === "Dark" ? "text-white" : "text-black",
         )}
       >
@@ -64,7 +64,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className={"font-titilium p-4 space-y-2"}>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)] "}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)] "}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/about`}
@@ -74,7 +74,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)] "}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)] "}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/life-at-desire `}
@@ -84,7 +84,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/csr`}
@@ -94,7 +94,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/awards`}
@@ -115,7 +115,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className={"font-titilium p-4 space-y-2"}>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)] "}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)] "}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/aqualogix-automation-solution `}
@@ -125,7 +125,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/aqualogix-smart-water-meter`}
@@ -135,7 +135,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/products-and-solution/sunaquator-solar-pump-controller`}
@@ -156,7 +156,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className={"font-titilium p-4 space-y-2"}>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)] "}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)] "}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/services/esco `}
@@ -166,7 +166,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/services/smart-epc`}
@@ -176,7 +176,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/services/decentralized-water-management`}
@@ -186,7 +186,7 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem
-                className={"uppercase tracking-wide text-[min(1.8vh,1.8vw)]"}
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_APP_URL}/services/operation-and-maintenance`}
@@ -198,18 +198,38 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
             </DropdownMenuContent>
           </DropdownMenu>
         </Link>
-        <Link
-          href={`${process.env.NEXT_PUBLIC_APP_URL}/innovationhub`}
-          className="text-center"
-        >
-          Innovation Hub
+        <Link href={"#"} className="text-center">
+          <DropdownMenu>
+            <DropdownMenuTrigger
+              className={"flex justify-center items-center gap-2 uppercase"}
+            >
+              Innovation Hub <ChevronDown />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className={"font-titilium p-4 space-y-2"}>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)] "}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/innovationhub `}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Innovation Hub
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)] "}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/blogs `}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Blogs
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </Link>
-        <Link
-          href={`${process.env.NEXT_PUBLIC_APP_URL}/blogs`}
-          className="text-center"
-        >
-          Blogs
-        </Link>
+
         <Link
           href={`${process.env.NEXT_PUBLIC_APP_URL}/contact`}
           className="text-center"

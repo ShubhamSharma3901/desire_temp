@@ -12,6 +12,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import axios from "axios";
 import SanityImage from "@/components/ui/SanityImage";
 import gauravgupta from "@/public/asset/aboutPage/MrGauravGupta.avif";
+import saurabhSir from "@/public/asset/aboutPage/saurabhSir.avif";
+import ruchi from "@/public/asset/aboutPage/ruchi.png";
+import suraj from "@/public/asset/aboutPage/suraj.avif";
 
 const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -233,6 +236,107 @@ const Page = () => {
                 significant recognition. Committed to mentoring, Gaurav supports
                 aspiring entrepreneurs to make a meaningful impact globally.
               </div>
+            </div>
+          </div>
+
+          <div
+            className={
+              "grid  smTablet:grid-cols-2 xsPhone:grid-cols-1 smLaptop:grid-cols-3 font-titilium gap-5"
+            }
+          >
+            <div
+              className={
+                "flex flex-col justify-start items-start gap-6 pb-6 bg-white"
+              }
+            >
+              <div className={"w-full h-[400px] overflow-clip"}>
+                <Image
+                  src={saurabhSir}
+                  alt={""}
+                  className={"w-full min-h-full object-cover "}
+                />
+              </div>
+
+              <div className={"flex flex-col justify-center items-start px-6"}>
+                <h1
+                  className={
+                    "smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+                  }
+                >
+                  Mr. Saurabh Gupta
+                </h1>
+                <p className={"text-gray-500"}>Director</p>
+              </div>
+              <p className={"px-6 text-neutral-600"}>
+                Saurabh Gupta, as Director at Desire Energy Solutions,
+                spearheads the decentralized water management division,
+                utilizing extensive operational expertise to lead strategic
+                initiatives in solar and water management, influencing long-term
+                organizational strategies and priorities.
+              </p>
+            </div>
+            <div
+              className={
+                "flex flex-col justify-start items-start gap-6 pb-6 bg-white"
+              }
+            >
+              <div className={"w-full h-[400px] overflow-clip"}>
+                <Image
+                  src={suraj}
+                  alt={""}
+                  className={"w-full min-h-full object-cover "}
+                />
+              </div>
+
+              <div className={"flex flex-col justify-center items-start px-6"}>
+                <h1
+                  className={
+                    "smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+                  }
+                >
+                  Mr. Suraj Khandelwal
+                </h1>
+                <p className={"text-gray-500"}>Director</p>
+              </div>
+              <p className={"px-6 text-neutral-600"}>
+                Suraj Khandelwal, Director at Desire Energy Solutions, heads the
+                ESCO and EPC division with strong operational skills in project
+                execution, business expansion, and team management. His
+                leadership spans successful projects in Rajasthan and Uttar
+                Pradesh.
+              </p>
+            </div>
+
+            <div
+              className={
+                "flex flex-col justify-start items-start gap-6 pb-6 bg-white"
+              }
+            >
+              <div className={"w-full h-[400px] overflow-clip"}>
+                <Image
+                  src={ruchi}
+                  alt={""}
+                  className={"w-full min-h-full object-cover "}
+                />
+              </div>
+
+              <div className={"flex flex-col justify-center items-start px-6"}>
+                <h1
+                  className={
+                    "smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+                  }
+                >
+                  Mrs. Ruchi Gupta
+                </h1>
+                <p className={"text-gray-500"}>Director</p>
+              </div>
+              <p className={"px-6 text-neutral-600"}>
+                Ruchi Khandelwal, Director, drives company performance and
+                growth with a focus on culture and talent development. She
+                shapes strategy, leads support teams, and holds a commerce
+                degree from Maharani College, University of Rajasthan, and is a
+                Chartered Financial Analyst.
+              </p>
             </div>
           </div>
 
