@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { Loader2, Mail, Phone } from "lucide-react";
 import { toast } from "sonner";
 import z from "zod";
@@ -25,7 +25,7 @@ const Page = () => {
         message: "Message should not have more than 20000 characters",
       }),
   });
-  const recaptcha = useRef<ReCAPTCHA>(null);
+  // const recaptcha = useRef<ReCAPTCHA>(null);
 
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
@@ -125,23 +125,23 @@ const Page = () => {
 
                   //* CAPTCHA VERIFICATION
 
-                  const captchaValue = recaptcha?.current?.getValue();
+                  // const captchaValue = recaptcha?.current?.getValue();
 
-                  if (!captchaValue) {
-                    alert("Please verify the reCAPTCHA!");
-                    setIsSubmitting(false);
-                  } else {
-                    const res = await fetch("/api/verify", {
-                      method: "POST",
-                      body: JSON.stringify(captchaValue),
-                      headers: {
-                        "content-type": "application/json",
-                      },
-                    });
-                    const data = await res.json();
+                  // if (!captchaValue) {
+                  //   alert("Please verify the reCAPTCHA!");
+                  //   setIsSubmitting(false);
+                  // } else {
+                  //   const res = await fetch("/api/verify", {
+                  //     method: "POST",
+                  //     body: JSON.stringify(captchaValue),
+                  //     headers: {
+                  //       "content-type": "application/json",
+                  //     },
+                  //   });
+                  //   const data = await res.json();
 
-                    console.log("data===", data);
-                    if (data.success) {
+                    // console.log("data===", data);
+                    // if (data.success) {
                       //* SEND EMAIL IF VERIFIED
                       const formDataToSend = formDataSchema.safeParse({
                         name: nameRef.current?.value,
@@ -169,7 +169,7 @@ const Page = () => {
                         const status = await response.json();
 
                         form.reset();
-                        recaptcha.current?.reset();
+                        // recaptcha.current?.reset();
                         // alert("Form submission successful!");
 
                         setIsSubmitting(false);
@@ -208,13 +208,13 @@ const Page = () => {
                             formDataToSend.error.format().message?._errors,
                           );
                         }
-                        recaptcha.current?.reset();
+                        // recaptcha.current?.reset();
                       }
-                    } else {
-                      alert("reCAPTCHA validation failed!");
-                      setIsSubmitting(false);
-                    }
-                  }
+                  //   } else {
+                  //     alert("reCAPTCHA validation failed!");
+                  //     setIsSubmitting(false);
+                  //   }
+                  // }
                 }}
                 className="w-full space-y-8 font-poppins"
               >
@@ -282,10 +282,10 @@ const Page = () => {
                     required
                   ></textarea>
                 </div>
-                <ReCAPTCHA
-                  ref={recaptcha}
-                  sitekey={process.env.NEXT_PUBLIC_SITE_KEY as string}
-                />
+                {/*<ReCAPTCHA*/}
+                {/*  ref={recaptcha}*/}
+                {/*  sitekey={process.env.NEXT_PUBLIC_SITE_KEY as string}*/}
+                {/*/>*/}
                 <button
                   type="submit"
                   className="flex w-full items-center justify-center bg-[#045824] hover:bg-[#045824]/90 p-4 text-center text-md font-medium  transition"

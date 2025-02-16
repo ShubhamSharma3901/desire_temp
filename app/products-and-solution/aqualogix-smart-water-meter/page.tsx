@@ -5,7 +5,8 @@ import {
   BreadcrumbPage,
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
-import landing_photo from "@/public/asset/products_and_solution/water_oscillations.jpg";
+// import landing_photo from "@/public/asset/products_and_solution/water_oscillations.jpg";
+import landing_photo from "@/public/asset/headerImages/Header Image 1.jpg";
 import aqualogix_logo from "@/public/asset/products_and_solution/Desire-Aqualogix.webp";
 import aqualogix_creative_1 from "@/public/asset/products_and_solution/aqualogix_smart_water_collage.jpeg";
 import { BreadcrumbItem } from "flowbite-react";

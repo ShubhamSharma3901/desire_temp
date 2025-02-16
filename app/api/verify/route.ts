@@ -3,13 +3,14 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const captchaValue = await req.json();
-
-    const { data } = await axios.post(
-      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SITE_SECRET}&response=${captchaValue}`,
-    );
-
-    return NextResponse.json(data);
+    // const captchaValue = await req.json();
+    //
+    // const { data } = await axios.post(
+    //   `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SITE_SECRET}&response=${captchaValue}`,
+    // );
+    //
+    // return NextResponse.json(data);
+    return NextResponse.json({ message: "Captcha Route Accessed" });
   } catch (err) {
     console.log("captcha verify error", err);
   }

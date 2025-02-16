@@ -70,6 +70,17 @@ const Page = () => {
         </Breadcrumb>
       </div>
 
+      <div className={"w-[90%] text-center font-titilium text-white bg-[#013300] py-10 text-xl my-10 space-y-4  smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(3.5vh,3.5vw)"}>
+        Join Desire Energy&apos;s official Newsletter:
+        <Link href={"https://www.linkedin.com/newsletters/desire-cascade-7252961588683419648/"} className={"ml-2 font-semibold text-[#D5F590] hover:underline"}>
+          Desire Cascade
+        </Link>
+        <div className={"font-titilium smTablet:text-[min(2.2vh,2.2vw)] xsPhone:text-[min(3vh,3vw) opacity-80"}>
+          Our weekly guide to Water Management, Sustainability & Industry Insights
+        </div>
+
+      </div>
+
       <div className="grid text-[#000121] w-[90%] phone:grid-cols-1 phone:gap-[2rem]  tablet:grid-cols-2 tablet:gap-[2rem] smLaptop:gap-[2rem]">
         {blogs &&
           blogs.length !== 0 &&

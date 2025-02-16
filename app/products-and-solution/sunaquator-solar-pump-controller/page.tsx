@@ -5,7 +5,8 @@ import {
   BreadcrumbPage,
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
-import landing_photo from "@/public/asset/products_and_solution/SunAquator.jpg";
+// import landing_photo from "@/public/asset/products_and_solution/SunAquator.jpg";
+import landing_photo from "@/public/asset/headerImages/Header Image 3.jpg";
 import sunaquator_logo from "@/public/asset/products_and_solution/sunaquator_logo.png";
 import sunaquator_creative_1 from "@/public/asset/products_and_solution/Sunaquator-creative-1.png";
 import sunaquator_creative_2 from "@/public/asset/products_and_solution/Sunaquator-creatiive-2.png";

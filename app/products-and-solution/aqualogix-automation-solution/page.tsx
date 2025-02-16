@@ -5,7 +5,8 @@ import {
   BreadcrumbPage,
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
-import landing_photo from "@/public/asset/products_and_solution/Wastewater-treatment-and-disposal-evreka-scaled.jpg";
+// import landing_photo from "@/public/asset/products_and_solution/Wastewater-treatment-and-disposal-evreka-scaled.jpg";
+import landing_photo from "@/public/asset/headerImages/Header Image 2.jpg";
 import aqualogix_logo from "@/public/asset/products_and_solution/Desire-Aqualogix.webp";
 import aqualogix_creative_1 from "@/public/asset/products_and_solution/Aqualogix-creative.png";
 import aqualogix_creative_2 from "@/public/asset/products_and_solution/Aqualogix-Automation.jpeg";

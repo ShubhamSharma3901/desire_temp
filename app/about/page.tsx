@@ -14,7 +14,7 @@ import SanityImage from "@/components/ui/SanityImage";
 import gauravgupta from "@/public/asset/aboutPage/MrGauravGupta.avif";
 import saurabhSir from "@/public/asset/aboutPage/saurabhSir.avif";
 import ruchi from "@/public/asset/aboutPage/ruchi.png";
-import suraj from "@/public/asset/aboutPage/suraj.avif";
+import suraj from "@/public/asset/aboutPage/suraj sir.png";
 
 const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);

@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 		const email = await resend.emails.send({
 			from: "Query<onboarding@resend.dev>",
 			cc: "",
-			to: "shubham03901@gmail.com",
+			to: "info@desireenergy.com",
 			subject: `${body.subject}`,
 			html: `<p>Name:${body.name}</p><p>Email:${body.email}</p><p>Query:${body.message}</p>`,
 			// headers: {
