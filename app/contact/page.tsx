@@ -6,7 +6,8 @@ import { toast } from "sonner";
 import z from "zod";
 import { fork } from "child_process";
 import Image from "next/image";
-import landing_photo from "@/public/asset/waste-water-treatment-plant 2.png";
+// import landing_photo from "@/public/asset/waste-water-treatment-plant 2.png";
+import landing_photo from "@/public/asset/headerImages/Header Image 4.jpg";
 import { motion } from "framer-motion";
 import { GoLocation } from "react-icons/go";
 

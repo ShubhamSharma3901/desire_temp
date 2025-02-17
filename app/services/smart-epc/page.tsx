@@ -5,7 +5,8 @@ import {
   BreadcrumbPage,
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
-import landing_photo from "@/public/asset/Services/epc.jpg";
+// import landing_photo from "@/public/asset/Services/epc.jpg";
+import landing_photo from "@/public/asset/headerImages/Header Image 4.jpg";
 import epc2 from "@/public/asset/Services/epc2.jpg";
 
 import epc1 from "@/public/asset/Services/Smart_epc-e1678690983969.webp";

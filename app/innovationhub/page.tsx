@@ -11,8 +11,8 @@ import {
 } from "@/components/ui/accordion";
 import Blogs from "@/components/Home/Blogs";
 import Image from "next/image";
-import landingImage from "@/public/asset/aboutPage/AboutPageCreative.png";
-
+// import landingImage from "@/public/asset/aboutPage/AboutPageCreative.png";
+import landingImage from "@/public/asset/headerImages/Header Image 1.jpg";
 const Page = () => {
   const videoRef = useRef<HTMLVideoElement>(null); // Specify the type for videoRef
 

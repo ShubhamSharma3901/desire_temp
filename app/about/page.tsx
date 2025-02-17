@@ -5,7 +5,8 @@ import OurFocus from "@/components/About/OurFocus";
 import WhoWeAre from "@/components/About/WhoWeAre";
 import CoreValues from "@/components/About/CoreValues";
 
-import headerImage from "@/public/asset/aboutPage/AboutPageCreative.png";
+// import headerImage from "@/public/asset/aboutPage/AboutPageCreative.png";
+import headerImage from "@/public/asset/headerImages/Header Image 3.jpg";
 import Services from "@/components/About/Services";
 import { team } from "@/types";
 import { Skeleton } from "@/components/ui/skeleton";

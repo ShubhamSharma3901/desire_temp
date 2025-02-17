@@ -1,6 +1,8 @@
 import Image from "next/image";
-import landingImage from "@/public/How-to-Optimize-Wastewater-Treatment-Plants-for-Maximum-Efficiency 1 (1).png";
-import landingImage2 from "@/public/asset/products_and_solution/Wastewater-treatment-and-disposal-evreka-scaled.jpg";
+// import landingImage from "@/public/How-to-Optimize-Wastewater-Treatment-Plants-for-Maximum-Efficiency 1 (1).png";
+import landingImage from "@/public/asset/headerImages/Header Image 1.jpg";
+import landingImage2 from "@/public/asset/headerImages/Header Image 2.jpg";
+//import landingImage2 from "@/public/asset/products_and_solution/Wastewater-treatment-and-disposal-evreka-scaled.jpg";
 
 import { Carousel } from "flowbite-react";
 import { ArrowUpRight } from "lucide-react";

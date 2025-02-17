@@ -16,7 +16,8 @@ import {
   TableFooter,
 } from "@/components/ui/table";
 
-import landing_photo from "@/public/asset/Services/ESCO.jpg";
+// import landing_photo from "@/public/asset/Services/ESCO.jpg";
+import landing_photo from "@/public/asset/headerImages/Header Image 2.jpg";
 import creative from "@/public/asset/Services/esco-1.webp";
 import { BreadcrumbItem } from "flowbite-react";
 import Image from "next/image";

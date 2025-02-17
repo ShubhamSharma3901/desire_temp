@@ -5,7 +5,8 @@ import {
   BreadcrumbPage,
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
-import landing_photo from "@/public/asset/Services/dwm.webp";
+// import landing_photo from "@/public/asset/Services/dwm.webp";
+import landing_photo from "@/public/asset/headerImages/Header Image 1.jpg";
 import dwm1 from "@/public/asset/Services/dwm1.webp";
 import dwm2 from "@/public/asset/Services/dwm2.webp";
 import dwm3 from "@/public/asset/Services/dwm3.webp";

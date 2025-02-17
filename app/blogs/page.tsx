@@ -6,7 +6,8 @@ import {
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
 
-import landing_photo from "@/public/asset/aboutPage/AboutPageCreative.png";
+// import landing_photo from "@/public/asset/aboutPage/AboutPageCreative.png";
+import landing_photo from "@/public/asset/headerImages/Header Image 2.jpg";
 import { BreadcrumbItem } from "flowbite-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
