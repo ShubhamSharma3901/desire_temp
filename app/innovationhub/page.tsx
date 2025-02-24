@@ -13,6 +13,7 @@ import Blogs from "@/components/Home/Blogs";
 import Image from "next/image";
 // import landingImage from "@/public/asset/aboutPage/AboutPageCreative.png";
 import landingImage from "@/public/asset/headerImages/Header Image 1.jpg";
+import {motion} from "framer-motion";
 const Page = () => {
   const videoRef = useRef<HTMLVideoElement>(null); // Specify the type for videoRef
 
@@ -46,17 +47,18 @@ const Page = () => {
         {/* Blackish Overlay */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
 
-        {/* Content over the Video */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white w-full space-y-6">
-          <h1 className="smLaptop:text-[min(8vh,8vw)] smTablet:text-[min(7vh,7vw)] xsPhone:text-[min(12vh,12vw)]  font-titilium font-semibold">
-            Innovation Hub
-          </h1>
-          <p className=" tablet:w-[80%] smLaptop:text-[min(3vh,3vw)] text-[min(3.6vh,3.6vw)]  font-titilium  xsPhone:w-[90%] smLaptop:w-[50%] text-center">
-            The Desire Innovation Hub connects organizations worldwide,
-            leveraging a vast network to drive impactful advancements in water
-            management and distribution through strategic partnerships and
-            cutting-edge technologies.
-          </p>
+        <div className="absolute flex-col top-[50%] translate-y-[-50%] font-titilium text-white font-semibold w-[85%]">
+          <div className="w-full space-y-6">
+            <p className="smTablet:text-[min(5.5vh,5.5vw)] xsPhone:text-[min(8vh,8vw)] ">
+              Innovation Hub
+            </p>
+            <p className="smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-full font-light smLaptop:text-[min(2.5vh,2.5vw)] smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4vh,4vw)]">
+              The Desire Innovation Hub connects organizations worldwide,
+                  leveraging a vast network to drive impactful advancements in water
+                  management and distribution through strategic partnerships and
+                 cutting-edge technologies.
+            </p>
+          </div>
         </div>
       </div>
 

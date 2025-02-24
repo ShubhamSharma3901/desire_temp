@@ -37,16 +37,24 @@ const Page = () => {
           alt=""
           className="h-[80vh] object-cover brightness-[65%] w-full"
         />
-        <div className="absolute flex-col top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] font-titilium text-white font-semibold w-[85%]">
+        {/*<div className="absolute flex-col top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] font-titilium text-white font-semibold w-[85%]">*/}
+        {/*  <div className="w-full space-y-6">*/}
+        {/*    <p className="smTablet:text-[min(5.5vh,5.5vw)] xsPhone:text-[min(8vh,8vw)] w-full text-center ">*/}
+        {/*      Blogs@Desire*/}
+        {/*    </p>*/}
+        {/*    /!*<p className="smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-full font-light smLaptop:text-[min(2.5vh,2.5vw)] smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4vh,4vw)]">*!/*/}
+        {/*    /!*  ESCO specialize in energy efficiency, using performance-based*!/*/}
+        {/*    /!*  contracts to ensure guaranteed savings and environmental benefits,*!/*/}
+        {/*    /!*  effectively regenerating energy and resources.*!/*/}
+        {/*    /!*</p>*!/*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        <div className="absolute flex-col top-[50%] translate-y-[-50%] font-titilium text-white font-semibold w-[85%]">
           <div className="w-full space-y-6">
-            <p className="smTablet:text-[min(5.5vh,5.5vw)] xsPhone:text-[min(8vh,8vw)] w-full text-center ">
+            <p className="smTablet:text-[min(5.5vh,5.5vw)] xsPhone:text-[min(8vh,8vw)] ">
               Blogs@Desire
             </p>
-            {/*<p className="smLaptop:w-[50%] smTablet:w-[80%] xsPhone:w-full font-light smLaptop:text-[min(2.5vh,2.5vw)] smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(4vh,4vw)]">*/}
-            {/*  ESCO specialize in energy efficiency, using performance-based*/}
-            {/*  contracts to ensure guaranteed savings and environmental benefits,*/}
-            {/*  effectively regenerating energy and resources.*/}
-            {/*</p>*/}
+
           </div>
         </div>
       </div>
