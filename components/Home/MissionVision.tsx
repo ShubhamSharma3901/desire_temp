@@ -49,8 +49,7 @@ const MissionVision = () => {
             </div>
             <div>
               <p className="p-2">
-                Making public water infrastructure smart, efficient, and
-                accessible to all.
+                Making public water infrastructure smart, efficient and sustainable.
               </p>
             </div>
           </div>
