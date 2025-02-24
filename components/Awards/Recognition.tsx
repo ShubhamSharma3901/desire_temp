@@ -153,7 +153,7 @@ const Recognition = () => {
             <div className=" font-titilium font-semibold xsPhone:text-[min(5vh,5vw)] smTablet:text-[min(3vh,3vw)] smLaptop:text-[min(2.5vh,2.5vw)]">
               <p>{item.heading}</p>
             </div>
-            <div className=" font-titilium font-extralight">
+            <div className=" font-titilium font-extralight text-justify">
               <p>{item.content}</p>
             </div>
            </div>
