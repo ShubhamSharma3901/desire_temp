@@ -8,6 +8,7 @@ import {
 // import landing_photo from "@/public/asset/Services/epc.jpg";
 import landing_photo from "@/public/asset/headerImages/Header Image 4.jpg";
 import epc2 from "@/public/asset/Services/epc2.jpg";
+import desireLogo from "@/public/asset/products_and_solution/DesireLogoWater.svg";
 
 import epc1 from "@/public/asset/Services/Smart_epc-e1678690983969.webp";
 
@@ -47,20 +48,20 @@ const Page = () => {
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"
-                className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)"
+                className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]"
               >
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Services
               </BreadcrumbPage>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Smart EPC
               </BreadcrumbPage>
             </BreadcrumbItem>
@@ -78,7 +79,7 @@ const Page = () => {
                   Smart EPC
                 </span>
               </p>
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)]">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)]">
                 At Desire, we make the conventional water infra projects, which
                 are neither techdriven/ efficiently managed nor consist of an
                 efficient and sustainable design and construction, smart and
@@ -110,6 +111,74 @@ const Page = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div
+        className="my-20
+       flex flex-col justify-start items-center font-titilium text-start w-[85%] space-y-10 bg-[#F4F4F4] py-16 relative overflow-clip"
+      >
+        <h1 className="w-[95%] text-start p-4 pl-8 xsPhone:text-[min(7vh,7vw)] smTablet:text-[min(5vh,5vw)] font-bold text-[#085C2C] font-titilium">
+          Engineering, Procurement & Construction (EPC) – Smart Water Infrastructure
+        </h1>
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
+          Desire Energy Solutions is leading the way in smart, efficient, and
+          sustainable public water infrastructure through Project Jal Prabal.
+          With a total valuation of ₹2592 crores, the project aligns with the
+          Jal Jeevan Mission (JJM) to provide 55 LPCD (Liters Per Capita Per
+          Day) of clean potable water to every rural household in India.
+        </p>
+        <div className="w-[90%] bg-[#085C2C] p-4 pl-8 text-white text-[min(3.5vh,3.5vw)] font-light tracking-wide">
+          Scope of Work
+        </div>
+        <ul className="w-[90%] text-neutral-700 list-disc list-inside leading-relaxed xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)]">
+          <li>
+            Installation of 5+ lakh Functional Household Tap Connections (FHTCs)
+          </li>
+          <li>Laying and retrofitting 16,636 km of water pipelines</li>
+          <li>Construction of 507 overhead reservoirs & 460 pump houses</li>
+          <li>
+            Deployment of IoT devices & SCADA-based centralized monitoring
+          </li>
+          <li>Integration of solar-based water plants for energy efficiency</li>
+          <li>
+            Reduction of Non-Revenue Water (NRW) through AI-driven predictive
+            analytics
+          </li>
+        </ul>
+
+        <div className="w-[90%] bg-[#085C2C] p-4 pl-8 text-white text-[min(3.5vh,3.5vw)] font-light tracking-wide">
+          Sustainable Impact & Smart Technology
+        </div>
+        <ul className="w-[90%] text-neutral-700 list-disc list-inside leading-relaxed xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)]">
+          <li>
+            SCADA-based control systems ensure real-time water quality and
+            infrastructure monitoring
+          </li>
+          <li>
+            IoT-enabled water systems reduce human errors and optimize resource
+            utilization
+          </li>
+          <li>
+            Energy-efficient & solar-powered solutions support renewable energy
+            goals and reduce carbon footprint
+          </li>
+          <li>
+            Water treatment plant in Baghera, Rajasthan supplies 80,000 KL of
+            potable water per day
+          </li>
+        </ul>
+
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
+          By integrating cutting-edge technology with sustainable engineering
+          practices, Desire Energy Solutions is revolutionizing water
+          infrastructure and supporting India&apos;s mission for universal clean
+          water access.
+        </p>
+
+        <Image
+          src={desireLogo}
+          alt="desire_logo"
+          className="absolute xsPhone:right-[-2em] xsPhone:bottom-[-0.5em] tablet:right-[-5em] tablet:bottom-[-1em] opacity-5 xsPhone:w-[35vw] tablet:max-w-400px tablet:w-[20vw]"
+        />
       </div>
       <div className={"mt-10 w-[90%]"}>
         <Marque />

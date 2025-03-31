@@ -24,7 +24,7 @@ const data = [
 
 const Vision = () => {
   return (
-    <div className={"flex flex-col gap-20 justify-center items-center"}>
+    <div className={"w-[90%] flex flex-col gap-20 justify-center items-center"}>
       <div className="flex flex-col justify-center items-center  h-auto w-[90%]">
         <p className="font-light xsPhone:text-[min(6vh,6vw)] smTablet:text-[min(5vh,5vw)] font-titilium text-center">
           Empowering Communities, Enriching Lives

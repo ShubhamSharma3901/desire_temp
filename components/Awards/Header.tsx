@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import landingImage from "@/public/asset/awards/awards.webp";
+import landingImage from "@/public/asset/awards/awards-bg-3.jpg" ;
+
 
 const Header = () => {
     return (

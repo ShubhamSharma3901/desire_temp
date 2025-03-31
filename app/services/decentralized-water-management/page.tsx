@@ -50,20 +50,20 @@ const Page = () => {
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"
-                className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)"
+                className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]"
               >
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Services
               </BreadcrumbPage>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Decentralized Water Management
               </BreadcrumbPage>
             </BreadcrumbItem>

@@ -45,20 +45,20 @@ const Page = () => {
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"
-                className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)"
+                className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]"
               >
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Products & Solutions
               </BreadcrumbPage>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 AquaLogix Smart Water Meter
               </BreadcrumbPage>
             </BreadcrumbItem>
@@ -107,7 +107,7 @@ const Page = () => {
           </p>
           <hr className="relative right-0 h-1 w-[100px] bg-[#085C2C]" />
         </div>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           The AquaLogix smart water meter utilizes fluidic oscillation theory, a
           cutting-edge technology that eliminates traditional moving parts. This
           innovation ensures the meter remains unaffected by foreign materials,
@@ -116,7 +116,7 @@ const Page = () => {
           meter achieves exceptional durability and reliability, making it ideal
           for long-term use in various water management applications.
         </p>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           This advanced metering solution not only enhances accuracy but also
           minimizes maintenance requirements and operational disruptions
           typically associated with conventional meters. It enables automatic,

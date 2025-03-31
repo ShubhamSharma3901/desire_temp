@@ -18,10 +18,10 @@ const data = [
 ];
 const SakshamPage: React.FC = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-10 font-titilium ">
-      <div className="container mx-auto max-w-6xl space-y-16">
+    <div className="bg-gray-100 min-h-screen py-10 font-titilium w-[90%]">
+      <div className="container mx-auto w-[95%] space-y-16">
         {/* Header Section */}
-        <div className="text-center mt-9 space-y-16">
+        <div className="text-center mt-9 space-y-16 w-full">
           <h1 className="text-3xl xsPhone:text-[min(7vh,7vw)] smTablet:text-[min(5vh,5vw)] font-bold text-[#085C2C] font-titilium">
             Project &quot;Saksham&quot;
           </h1>

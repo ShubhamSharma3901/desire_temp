@@ -16,6 +16,7 @@ import gauravgupta from "@/public/asset/aboutPage/MrGauravGupta.avif";
 import saurabhSir from "@/public/asset/aboutPage/saurabhSir.avif";
 import ruchi from "@/public/asset/aboutPage/ruchi.png";
 import suraj from "@/public/asset/aboutPage/suraj sir.png";
+import Timeline from "@/components/About/Timeline";
 
 const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -154,6 +155,10 @@ const Page = () => {
         <div className="w-[85%] flex flex-col justify-start items-start gap-10 ">
           <WhoWeAre />
         </div>
+      </div>
+
+      <div className="w-[85%] flex flex-col justify-start items-start gap-10 py-20">
+        <Timeline />
       </div>
 
       <div className="bg-white py-20 w-full flex justify-center items-start relative min-h-[100vh]">

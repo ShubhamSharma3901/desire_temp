@@ -165,20 +165,20 @@ const Page = () => {
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"
-                className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)"
+                className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]"
               >
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Services
               </BreadcrumbPage>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 ESCO
               </BreadcrumbPage>
             </BreadcrumbItem>
@@ -197,7 +197,7 @@ const Page = () => {
                   &nbsp;ESCO?
                 </span>
               </p>
-              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.7vh,2.7vw)]">
+              <p className="text-[#FFFFFF] xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)]">
                 We are leading player, out of very few “ESCO Company” which are
                 certified by Bureau of Energy Efficiency (BEE), working globally
                 towards energy conservation in water infrastructure field. With
@@ -225,7 +225,7 @@ const Page = () => {
           </p>
           <hr className="relative right-0 h-1 w-[100px] bg-[#085C2C]" />
         </div>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           Energy conservation in water supply is another major issue in India.
           Municipalities and other water supply bodies consume 12.45 billion KWH
           energy per-year for water pumping and water supply. Aligning with
@@ -245,7 +245,7 @@ const Page = () => {
         </p>
         <Table>
           <TableHeader>
-            <TableRow className={"bg-[#085C2C] hover:bg-[#085C2C]"}>
+            <TableRow className={"bg-[#085C2C] hover:bg-[#085C2C] smTablet:text-[min(1.8vh,1.8vw)]"}>
               <TableHead className={"text-white"}>No.</TableHead>
               <TableHead className={"text-white"}>Sector</TableHead>
               <TableHead className={"text-white"}>
@@ -258,7 +258,7 @@ const Page = () => {
           </TableHeader>
           <TableBody>
             {sectors.map((sector, idx) => (
-              <TableRow key={idx}>
+              <TableRow key={idx} className={"smTablet:text-[min(1.8vh,1.8vw)]"}>
                 <TableCell className="font-medium">{sector.no}</TableCell>
                 <TableCell>{sector.sector}</TableCell>
                 <TableCell>{sector.consumption}</TableCell>
@@ -267,7 +267,7 @@ const Page = () => {
             ))}
           </TableBody>
         </Table>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           To promote Energy Efficiency and energy conservation measures,
           Government of India enacted The Energy Conservation Act-2001. ADB
           study (2004) of Demand Side Management potential in industry,
@@ -276,7 +276,7 @@ const Page = () => {
           Rs. 74,000 crores (INR) and an avoided capacity addition of 19,000 MW
           in India.
         </p>{" "}
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           Looking towards the market potential Desire established it self a
           Leading ESCO Company In India with the specialization of energy saving
           in water supply and Pumping system, and now having many of the
@@ -288,7 +288,7 @@ const Page = () => {
       <div className="w-[85%] space-y-20 font-titilium">
         <Table>
           <TableHeader>
-            <TableRow className={"bg-[#085C2C] hover:bg-[#085C2C]"}>
+            <TableRow className={"bg-[#085C2C] hover:bg-[#085C2C] smTablet:text-[min(1.8vh,1.8vw)]"}>
               <TableHead className={"text-white"}>
                 Name of ESCO Project
               </TableHead>
@@ -306,7 +306,7 @@ const Page = () => {
           </TableHeader>
           <TableBody>
             {escoProjects.map((proj, idx) => (
-              <TableRow key={idx}>
+              <TableRow key={idx} className={"smTablet:text-[min(1.8vh,1.8vw)]"}>
                 <TableCell className="font-medium">{proj.name}</TableCell>
                 <TableCell>{proj.customer}</TableCell>
                 <TableCell>{proj.projectTenure}</TableCell>
@@ -320,7 +320,7 @@ const Page = () => {
             ))}
           </TableBody>
         </Table>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           Along with the above major ESCO projects in water supply segments ,
           desire have implemented many projects in lighting and water supply to
           various Industries and achieved saving from 30% to 80%, by deep study
@@ -334,7 +334,7 @@ const Page = () => {
           Deeg & Kama Pilot Project
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           Desire has come up with some trendsetting technologies that have
           completely transformed the energy sector. In 2010, Public Health and
           Engineering Department (PHED) assigned 28 submersible pumps in DEEG
@@ -351,7 +351,7 @@ const Page = () => {
           Esco Churu Rajasthan
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           In the Churu district of Rajasthan, where potable water is not
           available for everyone, Desire has come up with an innovative method
           to make water accessible to the masses. Initially, there were 250 tube
@@ -378,7 +378,7 @@ const Page = () => {
           ESCO Kailana Jodhpur
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           Desire has left its footprint on Jodhpur by installing an energy
           efficient system in KAILANA district. Before the conceptualization of
           Desire system, water was harnessed through an artificial Canal (RGLC)
@@ -405,7 +405,7 @@ const Page = () => {
           ESCO Sirohi Rajasthan
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           Sirohi, one of the arid districts of Rajasthan was battling with the
           water problem. Before 2015, the district was supplied potable water
           through its 250 tubewell and 30 pump houses network governed by PHED.
@@ -423,7 +423,7 @@ const Page = () => {
           ESCO Bharatpur
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           Water has been the major issue in Bharatpur city since Desire has set
           foot on this barren land. With a population of over 5 lac, the city’s
           main source of water is Chambal river and Bandh Barethan. The overall
@@ -437,7 +437,7 @@ const Page = () => {
           ESCO Deesa Gujrat
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           Deesa is a city and a municipality in the Banaskantha district in the
           state of Gujarat, India. Deesa is known for its potato plantations.
           Water production was 2050 KLD for the Deesa city, while the present
@@ -452,7 +452,7 @@ const Page = () => {
           ESCO Weir-Bhusawar
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           Weir is a Tehsil Head Quarter of the Bharatpur District in the Indian
           state of Rajasthan. The geographical location of Weir is 25.68° North,
           75.73° East and it is 157 KM Away from state capital Jaipur. At
@@ -488,7 +488,7 @@ const Page = () => {
           ESCO Jaisamand
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           The beautiful city of Udaipur is situated in the southern portion of
           the Rajasthan State and lies in latitude 24° N and longitude 73° 43°
           E. It is also surrounded by Aravali hills on Delhi-Ahmedabad National
@@ -513,7 +513,7 @@ const Page = () => {
           ESCO Ajmer
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed w-[90%]">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%]">
           DESIRE is working with government (multiple) organization and some
           multinational conglomerate as energy service company which provide
           energy saving solutions through its hi-tech water purifying system.

@@ -13,37 +13,55 @@ const WhoWeAre = () => {
         </p>
         <hr className="relative   right-0 h-1 w-[100px] bg-[#085C2C]" />
       </div>
-      <div className="grid smLaptop:grid-cols-2 xsPhone:grid-cols-1 smLaptop:gap-[5rem] xsPhone:gap-[4rem]">
-        <div className="flex flex-col justify-start smLaptop:items-start xsPhone:items-center gap-10">
-          <h1 className="smTablet:text-[min(4vh,4vw)] xsPhone:text-[min(6vw,6vh)] font-titilium">
+      <div
+        className={
+          "flex flex-col justify-center items-center w-full gap-14 font-titilium"
+        }
+      >
+        <div
+          className={
+            "flex xsPhone:flex-col smTablet:flex-row justify-center items-start w-full gap-10 font-titilium"
+          }
+        >
+          <h1 className="smTablet:text-[min(4vh,4vw)] xsPhone:text-[min(6vw,6vh)] font-titilium xsPhone:w-full smTablet:w-[50%]">
             Driving Water Solutions: Innovating Efficiency, Harnessing Renewable
-            Energy for Sustainable Public Infrastructure Nationwide.
+            Energy for Sustainable Public Infrastructure Nationwide.
           </h1>
-          <Image
-            src={WhoWeAre1}
-            alt="WhoWeAre Image 1"
-            className="max-w-[550px] w-full"
-          />
+          <p className="xsPhone:w-full smTablet:w-[50%] smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(3.5vh,3.5vw)] font-titilium  text-justify text-neutral-800 font-light">
+            Desire Energy Solutions Pvt Ltd, founded in 2011 by Gaurav Kumar
+            Gupta, Saurabh Gupta, and Ruchi Khandelwal, specializes in ESCO,
+            solar, IoT, and infrastructure projects. Notably, it has implemented
+            the Jal Jeevan Mission across 100,000+ villages and 14 cities,
+            leveraging renewable energy and advanced technology for efficient
+            water management. With a team of over 2,000 professionals, the
+            company is recognized for its innovation, transparency, and
+            commitment to energy efficiency.
+          </p>
         </div>
-        <div className="flex flex-col justify-start smLaptop:items-start xsPhone:items-center gap-10">
-          <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(3.5vh,3.5vw)] font-titilium text-neutral-800 font-light">
-            Desire Energy Solutions Pvt Ltd specializes in ESCO, solar, IoT, and
-            infrastructure projects, implementing initiatives such as the Jal
-            Jeevan Mission in over 100,000 villages and 14 cities. They utilize
-            renewable energy and advanced technology to enhance water management
-            efficiency.
-          </p>
-          <p className="smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(3.5vh,3.5vw)]  font-titilium text-neutral-800 font-light">
-            Founded in 2011 by Mr. Gaurav Kumar Gupta, Mr. Saurabh Gupta, and
-            Mrs. Ruchi Khandelwal, the Company champions transparency and trust.
-            With a team exceeding 2,000 professionals, it has garnered accolades
-            for innovative service and energy efficiency.
-          </p>
-          <Image
-            src={WhoWeAre2}
-            alt="WhoWeAre Image 2"
-            className="max-w-[550px] w-full"
-          />
+
+        <div
+          className={
+            "grid smTablet:grid-cols-2 xsPhone:grid-cols-1 w-full gap-10 font-titilium"
+          }
+        >
+          <div className={"w-full h-full border-2 overflow-clip"}>
+            <Image
+              src={WhoWeAre1}
+              alt="WhoWeAre Image 1"
+              className="min-w-full min-h-full object-fill object-center "
+            />
+          </div>
+          <div
+            className={
+              "w-full h-auto border-2 overflow-clip xsPhone:hidden smTablet:block"
+            }
+          >
+            <Image
+              src={WhoWeAre2}
+              alt="WhoWeAre Image 2"
+              className="w-full object-cover "
+            />
+          </div>
         </div>
       </div>
     </>

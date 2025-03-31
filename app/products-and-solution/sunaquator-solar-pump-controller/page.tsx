@@ -46,20 +46,20 @@ const Page = () => {
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"
-                className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)"
+                className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]"
               >
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 Products & Solutions
               </BreadcrumbPage>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-titilium smTablet:text-[min(2vh,2vw)] xsPhone:text-[min(3vh,3vw)">
+              <BreadcrumbPage className="font-titilium smTablet:text-[min(2.4vh,2.4vw)] xsPhone:text-[min(3vh,3vw)]">
                 SunAquator Solar Power Plant
               </BreadcrumbPage>
             </BreadcrumbItem>
@@ -109,7 +109,7 @@ const Page = () => {
           </p>
           <hr className="relative right-0 h-1 w-[100px] bg-[#085C2C]" />
         </div>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           SunAquator, developed by Desire Energy, is an innovative solution in
           solar pump and controller technology known for its efficiency in the
           solar pumping sector. Featuring integrated Maximum Power Point
@@ -119,7 +119,7 @@ const Page = () => {
           standards, affirming its reliability across various solar energy
           applications.
         </p>
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.2vh,2.2vw)] text-neutral-700 leading-relaxed">
+        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed">
           SunAquator pump controllers seamlessly integrate with a mobile app and
           web portal, facilitating remote monitoring and operation. Users
           efficiently manage their solar pumping systems, accessing real-time

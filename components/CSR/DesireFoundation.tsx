@@ -6,7 +6,7 @@ import bulb from "@/public/asset/bulb.png";
 
 const DesireFoundation = () => {
   return (
-    <div className="flex justify-center items-center mb-20 smLaptop:mt-20 xsPhone:mt-0">
+    <div className="w-[90%] flex justify-center items-center mb-20 smLaptop:mt-20 xsPhone:mt-0">
       <div className="flex smLaptop:flex-row xsPhone:flex-col justify-center items-center  w-[95%]">
         {/* left */}
         <div className="smLaptop:w-[50%] xsPhone:w-full flex justify-center items-center">

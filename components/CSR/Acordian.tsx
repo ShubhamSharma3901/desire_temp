@@ -16,7 +16,7 @@ const Acordian = () => {
       setExpanded(newExpanded ? panel : false);
     };
   return (
-    <div>
+    <div className={"w-[90%]"}>
       <div className="my-[2.5rem] flex xsPhone:flex-col xsPhone:gap-10 smLaptop:gap-5 smLaptop:flex-row smLaptop:mt-[4rem] md:mt-[2rem] px-10">
         {/* left */}
         <div className="smLaptop:w-[50%] xsPhone:w-full">
