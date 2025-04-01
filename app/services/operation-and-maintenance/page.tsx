@@ -298,7 +298,7 @@ const Page = () => {
           elevated service reservoirs (ESR), sumps, water treatment plants
           (WTP), pump houses, pipelines, valves, pumping machinery, and
           electrical systems. We are redefining O&M practices to support
-          Gujarat's water management needs.
+          Gujarat&apos;s water management needs.
           <br />
           <br />
           <strong>Surat Operation & Maintenance Project:</strong> We have begun
