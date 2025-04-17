@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/breadcrumb";
 // import landing_photo from "@/public/asset/Services/opm.jpg";
 import landing_photo from "@/public/asset/headerImages/Header Image 3.jpg";
-import epc2 from "@/public/asset/Services/opm2.jpg";
+import epc2 from "@/public/asset/Services/o&m-intro.jpeg";
 
 import epc1 from "@/public/asset/Services/Smart_epc-e1678690983969.webp";
 
@@ -268,44 +268,53 @@ const Page = () => {
           Our Recent Projects
         </div>
 
-        <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
-          <strong>
-            Pipaliya Group NC-7 Water Supply Scheme, Morbi & Maliya Talukas:
-          </strong>{" "}
-          We have signed an agreement for the Comprehensive Operation &
-          Maintenance of this vital scheme. Our responsibilities include
-          managing and maintaining all critical assets, ensuring a reliable
-          supply of potable water to all hamlets and villages. This project
-          exemplifies our commitment to efficient, sustainable, and smart water
-          management solutions.
-          <br />
-          <br />
-          <strong>
-            Kakrapar Water Supply Scheme, Surat (Gujarat Water Supply Sewerage
-            Board - GWSSB):
-          </strong>{" "}
-          We have partnered with GWSSB for the O&M of civil and
-          electromechanical assets. This initiative delivers 26.73 MLD of
-          potable water to 161 villages across Mandvi, Mangrol & Umarpada
-          Talukas. We are dedicated to ensuring uninterrupted, efficient, and
-          safe water supply, contributing to sustainable development in the
-          region.
-          <br />
-          <br />
-          <strong>Pavagadh, Panchmahal District, Gujarat:</strong> We are
-          expanding our presence with advanced O&M solutions. Our focus includes
-          managing vital water infrastructure such as canal off-take structures,
-          elevated service reservoirs (ESR), sumps, water treatment plants
-          (WTP), pump houses, pipelines, valves, pumping machinery, and
-          electrical systems. We are redefining O&M practices to support
-          Gujarat&apos;s water management needs.
-          <br />
-          <br />
-          <strong>Surat Operation & Maintenance Project:</strong> We have begun
-          a project in Surat, Gujarat to ensure operation of pipelines, pumps,
-          and reservoirs. Our team is committed to providing safe water to the
-          local communities. We are focused on sustainability and reliability.
-        </p>
+        <div className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
+          <Table className={"bg-white/40"}>
+            <TableHeader>
+              <TableRow className={"bg-neutral-600 hover:bg-neutral-600 smTablet:text-[min(1.8vh,1.8vw)]"}>
+                <TableHead className={"text-white"}>Project Name</TableHead>
+                <TableHead className={"text-white"}>Location</TableHead>
+                <TableHead className={"text-white"}>Scope of Work</TableHead>
+                <TableHead className="text-white">Key Details</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  name: "Pipaliya Group NC-7 Water Supply Scheme",
+                  location: "Morbi & Maliya Talukas",
+                  scope: "Comprehensive O&M",
+                  details: "Managing assets to ensure reliable potable water supply.",
+                },
+                {
+                  name: "Kakrapar Water Supply Scheme",
+                  location: "Surat (GWSSB)",
+                  scope: "O&M of civil & electromechanical assets",
+                  details: "Delivering 26.73 MLD potable water to 161 villages.",
+                },
+                {
+                  name: "Pavagadh Water Supply Project",
+                  location: "Panchmahal District, Gujarat",
+                  scope: "Advanced O&M solutions",
+                  details: "Managing key water infrastructure (WTPs, pumps, pipelines, ESRs).",
+                },
+                {
+                  name: "Surat O&M Project",
+                  location: "Surat, Gujarat",
+                  scope: "Operation of pipelines, pumps, reservoirs",
+                  details: "Ensuring safe and sustainable water supply.",
+                },
+              ].map((proj, idx) => (
+                  <TableRow key={idx} className={"smTablet:text-[min(1.8vh,1.8vw)]"}>
+                    <TableCell className="font-semibold text-start">{proj.name}</TableCell>
+                    <TableCell>{proj.location}</TableCell>
+                    <TableCell>{proj.scope}</TableCell>
+                    <TableCell>{proj.details}</TableCell>
+                  </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
         <div className="w-[90%] bg-[#085C2C] p-4 pl-8 text-white text-[min(3.5vh,3.5vw)] font-light tracking-wide">
           Our Commitment

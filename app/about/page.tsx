@@ -13,9 +13,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import axios from "axios";
 import SanityImage from "@/components/ui/SanityImage";
 import gauravgupta from "@/public/asset/aboutPage/MrGauravGupta.avif";
-import saurabhSir from "@/public/asset/aboutPage/saurabhSir.avif";
+import saurabhSir from "@/public/asset/aboutPage/saurabhSir.webp";
 import ruchi from "@/public/asset/aboutPage/ruchi.png";
-import suraj from "@/public/asset/aboutPage/suraj sir.png";
+import suraj from "@/public/asset/aboutPage/suraj sir.webp";
 import Timeline from "@/components/About/Timeline";
 
 const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
@@ -157,7 +157,13 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="w-[85%] flex flex-col justify-start items-start gap-10 py-20">
+      <div className="w-[85%] flex flex-col justify-start items-start gap-10 py-10">
+        <div className="flex justify-start items-center w-full gap-5 font-titilium">
+          <p className="smTablet:text-[min(3vw,3vh)] xsPhone:text-[min(5vw,5vh)] font-light text-neutral-800">
+           Company Timeline
+          </p>
+          <hr className="relative   right-0 h-1 w-[100px] bg-[#085C2C]" />
+        </div>
         <Timeline />
       </div>
 
