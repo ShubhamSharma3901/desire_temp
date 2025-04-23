@@ -283,19 +283,19 @@ const Page = () => {
                 {
                   name: "Pipaliya Group NC-7 Water Supply Scheme",
                   location: "Morbi & Maliya Talukas",
-                  scope: "Comprehensive O&M",
+                  scope: "Comprehensive IoT Driven O&M",
                   details: "Managing assets to ensure reliable potable water supply.",
                 },
                 {
                   name: "Kakrapar Water Supply Scheme",
                   location: "Surat (GWSSB)",
-                  scope: "O&M of civil & electromechanical assets",
+                  scope: "Comprehensive IoT Driven O&M of civil & electromechanical assets",
                   details: "Delivering 26.73 MLD potable water to 161 villages.",
                 },
                 {
                   name: "Pavagadh Water Supply Project",
                   location: "Panchmahal District, Gujarat",
-                  scope: "Advanced O&M solutions",
+                  scope: "Advanced Comprehensive IoT Driven O&M solutions",
                   details: "Managing key water infrastructure (WTPs, pumps, pipelines, ESRs).",
                 },
                 {
