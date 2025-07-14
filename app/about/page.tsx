@@ -16,6 +16,7 @@ import gauravgupta from "@/public/asset/aboutPage/MrGauravGupta.avif";
 import saurabhSir from "@/public/asset/aboutPage/saurabhSir.webp";
 import ruchi from "@/public/asset/aboutPage/ruchi.png";
 import suraj from "@/public/asset/aboutPage/suraj sir.webp";
+import TeamTree from "@/public/asset/aboutPage/TeamTree.png";
 import Timeline from "@/components/About/Timeline";
 import org_struc from "@/public/asset/aboutPage/organizational-structure.jpeg";
 const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
@@ -175,12 +176,15 @@ const Page = () => {
 				</div>
 			</div>
 
-			<div className='bg-white py-20 w-full flex justify-center items-start relative min-h-[100vh]'>
+			<div className='bg-white pt-20 w-full flex justify-center items-start relative '>
 				<div className='w-[85%] flex flex-col justify-start items-start '>
 					<Services />
 				</div>
 			</div>
-			<div
+			<div className=''>
+				<Image src={TeamTree} alt={""} />
+			</div>
+			{/* <div
 				className={
 					"bg-[#F7F7F7] w-full flex justify-center items-center py-20"
 				}>
@@ -346,53 +350,7 @@ const Page = () => {
 					</div>
 
 					{team && <TeamCarousel team={team} loaded={loaded} />}
-
-					<div
-						className={
-							"grid smLaptop:grid-cols-4 xsPhone:grid-cols-1 smTablet:grid-cols-3 gap-10 "
-						}>
-						{/* {team && team.length != 0 && loaded ? (
-              team.map((team: team, idx) => {
-                return (
-                  <div
-                    key={idx}
-                    className={
-                      "bg-white font-titilium flex flex-col justify-start items-start  gap-10 "
-                    }
-                  >
-                    <div
-                      className={
-                        "flex flex-col justify-start items-start gap-6 w-full pb-6"
-                      }
-                    >
-                      <div className={"w-full h-[300px] overflow-clip"}>
-                        <SanityImage
-                          src={team.mainImage}
-                          className={"w-full min-h-full object-cover "}
-                        />
-                      </div>
-
-                      <div
-                        className={
-                          "flex flex-col justify-center items-start px-6"
-                        }
-                      >
-                        <h1 className={"text-[min(3vh,3vw)]"}>{team.name}</h1>
-                        <p className={"text-gray-500"}>{team.designation}</p>
-                      </div>
-                      <p className={"px-6 text-neutral-600"}>{team.about}</p>
-                    </div>
-                  </div>
-                );
-              })
-            ) : (
-              <Skeleton className={"w-full h-[300px] bg-white"} />
-            )} */}
-					</div>
 				</div>
-			</div>
-			{/* <div className='bg-white w-full flex justify-center items-start relative overflow-clip'>
-				<Image src={footerImage} alt='footer-img' className='w-full' />
 			</div> */}
 		</div>
 	);
