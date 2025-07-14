@@ -19,6 +19,7 @@ import suraj from "@/public/asset/aboutPage/suraj sir.webp";
 import TeamTree from "@/public/asset/aboutPage/TeamTree.png";
 import Timeline from "@/components/About/Timeline";
 import org_struc from "@/public/asset/aboutPage/organizational-structure.jpeg";
+import MissionVision from "@/components/Home/MissionVision";
 const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -132,11 +133,11 @@ const Page = () => {
 				</div>
 			</div>
 
-			<div className='w-[85%] flex flex-col justify-start items-start gap-10 mb-20'>
-				<Image src={org_struc} alt={""} />
+			<div className='w-[85%] flex flex-col justify-start items-start gap-10 mb-20 shadow-none'>
+				<Image src={TeamTree} alt={""} />
 			</div>
 
-			<div className='w-[85%] flex flex-col justify-start items-start gap-10 '>
+			<div className='w-[85%] flex flex-col justify-start items-start gap-10 my-10'>
 				<div className='flex justify-start items-center w-full gap-5 font-titilium'>
 					<p className='smTablet:text-[min(3vw,3vh)] xsPhone:text-[min(5vw,5vh)] font-light text-neutral-800'>
 						Company Timeline
@@ -146,7 +147,7 @@ const Page = () => {
 				<Timeline />
 			</div>
 
-			<div className='bg-neutral-100 py-20 mt-20 w-full flex justify-center items-start relative '>
+			{/* <div className='bg-neutral-100 py-20 mt-20 w-full flex justify-center items-start relative '>
 				<div className='w-[85%] flex flex-col justify-start items-start gap-10 '>
 					<div className='flex justify-start items-center w-full gap-5 font-titilium'>
 						<p className='smTablet:text-[min(3vw,3vh)] xsPhone:text-[min(5vw,5vh)] font-light text-neutral-800'>
@@ -168,7 +169,8 @@ const Page = () => {
 						Making Public Water Infrastructure Smart, Efficient & Sustainable.
 					</p>
 				</div>
-			</div>
+			</div> */}
+			<MissionVision />
 
 			<div className='bg-white py-20 w-full flex justify-center items-start relative min-h-[100vh]'>
 				<div className='w-[85%] flex flex-col justify-start items-start gap-10 '>
@@ -176,14 +178,12 @@ const Page = () => {
 				</div>
 			</div>
 
-			<div className='bg-white pt-20 w-full flex justify-center items-start relative '>
+			<div className='bg-white py-20 w-full flex justify-center items-start relative '>
 				<div className='w-[85%] flex flex-col justify-start items-start '>
 					<Services />
 				</div>
 			</div>
-			<div className=''>
-				<Image src={TeamTree} alt={""} />
-			</div>
+
 			{/* <div
 				className={
 					"bg-[#F7F7F7] w-full flex justify-center items-center py-20"
