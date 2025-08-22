@@ -46,29 +46,44 @@ const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
 					{team.map((member: any, idx: any) => (
 						<div
 							key={idx}
-							className={`bg-white font-titilium flex flex-col justify-start  items-start gap-10`}>
+							className={`bg-white font-titilium relative w-[300px] h-[400px] overflow-hidden group cursor-pointer`}>
+							{/* Image Container - Fixed Height */}
 							<div
 								className={
-									"flex flex-col justify-start items-start gap-6 pb-6"
+									"w-full h-full overflow-hidden bg-gray-100 relative"
 								}>
-								<div className={"w-[300px] h-[300px] overflow-clip"}>
-									<SanityImage
-										src={member.mainImage}
-										className={"w-full min-h-full object-cover "}
-									/>
-								</div>
+								<SanityImage
+									src={member.mainImage}
+									className={
+										"absolute inset-0 w-full min-h-full object-cover object-center"
+									}
+								/>
+							</div>
 
-								<div
-									className={"flex flex-col justify-center items-start px-6"}>
-									<h1
-										className={
-											"smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
-										}>
-										{member.name}
-									</h1>
-									<p className={"text-gray-500"}>{member.designation}</p>
-								</div>
-								<p className={"px-6 text-neutral-600"}>{member.about}</p>
+							{/* Name and Designation - Fixed Position */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 h-[100px] flex flex-col justify-center z-10"
+								}>
+								<h1
+									className={
+										"smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4vh,4vw)] font-semibold leading-tight"
+									}>
+									{member.name}
+								</h1>
+								<p className={"text-gray-500 text-sm mt-1"}>
+									{member.designation}
+								</p>
+							</div>
+
+							{/* About Text - Slides up on hover with dynamic height */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 transform translate-y-full transition-all duration-300 ease-in-out group-hover:translate-y-0 z-20"
+								}>
+								<p className={"text-neutral-600 text-sm leading-relaxed"}>
+									{member.about}
+								</p>
 							</div>
 						</div>
 					))}
@@ -133,9 +148,9 @@ const Page = () => {
 				</div>
 			</div>
 
-			<div className='w-[85%] flex flex-col justify-start items-start gap-10 mb-20 shadow-none'>
+			{/* <div className='w-[85%] flex flex-col justify-start items-start gap-10 mb-20 shadow-none'>
 				<Image src={TeamTree} alt={""} />
-			</div>
+			</div> */}
 
 			<div className='w-[85%] flex flex-col justify-start items-start gap-10 my-10'>
 				<div className='flex justify-start items-center w-full gap-5 font-titilium'>
@@ -184,7 +199,7 @@ const Page = () => {
 				</div>
 			</div>
 
-			{/* <div
+			<div
 				className={
 					"bg-[#F7F7F7] w-full flex justify-center items-center py-20"
 				}>
@@ -351,7 +366,7 @@ const Page = () => {
 
 					{team && <TeamCarousel team={team} loaded={loaded} />}
 				</div>
-			</div> */}
+			</div>
 		</div>
 	);
 };
