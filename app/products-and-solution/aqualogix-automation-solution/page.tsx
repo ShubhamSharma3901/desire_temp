@@ -149,14 +149,13 @@ const Page = () => {
 
       </div>
 
-      <div className=" xsPhone:w-full flex justify-center items-center mt-10">
+      {/* <div className=" xsPhone:w-full flex justify-center items-center mt-10">
         <Image src={aqualogix_creative_3} alt="" />
-      </div>
+      </div> */}
 
       <div className="my-20 flex flex-col justify-start items-center font-titilium text-start w-[85%] space-y-10 bg-[#F4F4F4] py-16 relative overflow-clip">
         <h1 className="w-[95%] text-start p-4 pl-8 xsPhone:text-[min(7vh,7vw)] smTablet:text-[min(4vh,4vw)] font-bold text-[#085C2C] font-titilium">
-          AquaLogix Automation: Transforming Water Supply in Varanasi, Chandoli,
-          Bhadohi, and Aligarh, Uttar Pradesh
+          AquaLogix Automation: Transforming Water Supply in Uttar Pradesh, Rajasthan & Gujarat 
         </h1>
         <p className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.5vh,2.5vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
           Desire Energy Solutions Pvt. Ltd. is revolutionizing water access in

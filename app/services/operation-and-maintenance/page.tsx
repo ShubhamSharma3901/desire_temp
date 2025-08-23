@@ -268,7 +268,7 @@ const Page = () => {
           Our Recent Projects
         </div>
 
-        <div className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
+        {/* <div className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
           <Table className={"bg-white/40"}>
             <TableHeader>
               <TableRow className={"bg-neutral-600 hover:bg-neutral-600 smTablet:text-[min(1.8vh,1.8vw)]"}>
@@ -314,7 +314,137 @@ const Page = () => {
               ))}
             </TableBody>
           </Table>
-        </div>
+        </div> */}
+
+
+
+<div className="xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify">
+          <Table className={"bg-white/40"}>
+            <TableHeader>
+              <TableRow className={"bg-neutral-600 hover:bg-neutral-600 smTablet:text-[min(1.8vh,1.8vw)]"}>
+                <TableHead className={"text-white"}>Location</TableHead>
+                <TableHead className="text-white">Key Details</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+      {[
+        // --- Existing Data ---
+        {
+          location: "Veraval (Gir Somnath)",
+          details: "Real-time monitoring of a 19.42 MLD WTP, supplying treated water to 70 villages in Veraval, Sutrapada & Talala.",
+        },
+        {
+          location: "Varanasi",
+          details: "Smart O&M enabled 100% FHTCs across 150+ villages through IoT-led tracking and maintenance.",
+        },
+        {
+          location: "Chandauli",
+          details: "IoT-integrated O&M ensured efficient water supply across 60+ villages with reduced downtime.",
+        },
+        {
+          location: "Jaunpur",
+          details: "Managing 70+ villages using automated alerts and preventive maintenance for seamless operations.",
+        },
+        {
+          location: "Mathura",
+          details: "Executing smart O&M in 75+ villages, blending automation and field insights for reliable water delivery.",
+        },
+        {
+          location: "Mainpuri",
+          details: "Monitoring 25+ villages via IoT, ensuring prompt issue resolution and operational transparency.",
+        },
+        {
+          location: "Panchmahal",
+          details: "Serving 222 villages with a total water demand of 40.95 MLD, supported by two WTPs of 73.30 MLD and 13 MLD, under IoT-driven O&M systems.",
+        },
+        {
+          location: "Aravali",
+          details: "Managing operations across 197 villages with a 60.06 MLD water demand, optimized through IoT-based performance monitoring.",
+        },
+        {
+          location: "Mahisagar (Kadana)",
+          details: "Efficiently operating in 150 villages with a 12.44 MLD water demand, using data-backed maintenance systems.",
+        },
+        {
+          location: "Morbi (Pipaliya)",
+          details: "Delivering smart O&M across 70 villages, catering to 5.90 MLD water demand through digital monitoring tools.",
+        },
+        {
+          location: "Surat",
+          details: "Ensuring seamless delivery of 26.73 MLD of potable water to 161 villages through proactive IoT-based operations.",
+        },
+        {
+          location: "Morbi (Khirai)",
+          details: "Managing two Water Treatment Plants of 11 MLD capacity each with smart O&M technologies for improved performance.",
+        },
+
+        // --- New Uttar Pradesh Data ---
+        {
+          location: "Ballia",
+          details: "Enabled safe water access in Ballia through 110 OHSRs, 1.5 lakh FHTCs, 115 MLD WTP, and 145 MLD Intake Well.",
+        },
+        {
+          location: "Mau",
+          details: "Enhanced water distribution through 108 Overhead Reservoirs, 113 Tube Wells, and 55,000 Functional Household Tap Connections.",
+        },
+        {
+          location: "Varanasi",
+          details: "Executed large-scale infrastructure with 230 OHSRs, 230 Tube Wells, and 1.15 lakh FHTCs, building a robust water system.",
+        },
+        {
+          location: "Siddharth Nagar",
+          details: "Improved rural water access with 50 OHSRs, 52 Tube Wells, and 19,500 FHTCs, ensuring supply to underserved communities.",
+        },
+        {
+          location: "Mahuari",
+          details: "Built a strong foundation with 102 OHSRs, 98 Tube Wells, and 79,829 FHTCs, reaching every household.",
+        },
+        {
+          location: "Mahuari 1",
+          details: "Strengthened urban water supply with 6 OHSRs, 14 Tube Wells, and 6300 FHTCs, ensuring safe water delivery.",
+        },
+
+        // --- New Rajasthan Data ---
+        {
+          location: "Dungarpur",
+          details: "Established a robust system with 25 OHSRs, 3 MLD WTP, 3 MLD Intake Well, and 22,000 FHTCs for reliable treated water.",
+        },
+        {
+          location: "Arthuna",
+          details: "Upgraded rural infrastructure with 30 Tube Wells, 47 OHSRs, and 11,000 FHTCs, improving water availability.",
+        },
+        {
+          location: "Bichhiwara",
+          details: "Enabled safe drinking water with 13,523 FHTCs, 2 Tube Wells, and 30 OHSRs, improving quality of life.",
+        },
+        {
+          location: "Sarada",
+          details: "Enhanced regional water systems with 15 OHSRs, 11,400 FHTCs, and 2 CWRs, boosting domestic water access.",
+        },
+        {
+          location: "Deeg",
+          details: "Empowered 400+ villages with 64 OHSRs, 12 CWRs, and 9,483 FHTCs, bridging the rural-urban gap.",
+        },
+        {
+          location: "Banswara",
+          details: "Transformed water access across 345 villages with 54 OHSRs, 15 CWR units, a 3.5 MLD WTP, and 65,821 FHTCs.",
+        },
+      ].map((row, idx) => (
+        <TableRow key={idx}>
+          <TableCell className="font-semibold">{row.location}</TableCell>
+          <TableCell>{row.details}</TableCell>
+        </TableRow>
+      ))}
+    </TableBody>
+  </Table>
+</div>
+
+
+
+
+
+
+
 
         <div className="w-[90%] bg-[#085C2C] p-4 pl-8 text-white text-[min(3.5vh,3.5vw)] font-light tracking-wide">
           Our Commitment

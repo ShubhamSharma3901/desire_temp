@@ -310,7 +310,9 @@ const Page = () => {
           <Skeleton className={"w-full h-[300px]"} />
         )}
       </div>
-      <div
+
+      
+      {/* <div
         className={"bg-[#F7F7F7] w-full flex justify-center items-center py-20"}
       >
         <div className={"h-full space-y-20 w-[87%] "}>
@@ -402,7 +404,7 @@ const Page = () => {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

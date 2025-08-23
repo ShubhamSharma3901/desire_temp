@@ -93,6 +93,20 @@ const NavBar = ({ type }: { type: "Dark" | "Light" }) => {
                   CSR
                 </Link>
               </DropdownMenuItem>
+
+               <DropdownMenuItem
+                className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
+              >
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_APP_URL}/career`}
+                  className={"hover:text-[#085C2C]"}
+                >
+                  Career
+                </Link>
+              </DropdownMenuItem>
+
+
+
               <DropdownMenuItem
                 className={"uppercase tracking-wide text-[min(2.0vh,2.0vw)]"}
               >
