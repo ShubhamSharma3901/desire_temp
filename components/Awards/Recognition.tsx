@@ -107,12 +107,12 @@ const data = [
 		content:
 			"Enlisted by NABARD for the capital subsidy scheme, for Agriculture Solar Pumps",
 	},
-	{
-		img: "/asset/Awards107.webp",
-		heading: "SP-28 rating by CRISIL",
-		content:
-			'Obtained "SP-28" rating by CRISIL, for the high performance and financial strength for solar projects.',
-	},
+	// {
+	// 	img: "/asset/Awards107.webp",
+	// 	heading: "SP-28 rating by CRISIL",
+	// 	content:
+	// 		'Obtained "SP-28" rating by CRISIL, for the high performance and financial strength for solar projects.',
+	// },
 	{
 		img: "/asset/Awards108.webp",
 		heading: "Certified products with CE marketing",

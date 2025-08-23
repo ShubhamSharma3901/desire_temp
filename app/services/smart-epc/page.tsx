@@ -32,22 +32,22 @@ import Marque from "@/components/Home/Marquee";
 const epcProjectsUP = [
 	{
 		district: "Ballia",
-		omvalue: "₹267.5 Cr",
+		// omvalue: "₹267.5 Cr",
 		keyInfra: "110 OHSRs, 150000 FHTC's, WTP - 115 MLD, Intake well - 145 MLD",
 	},
 	{
 		district: "Mau",
-		omvalue: "₹66.5 Cr",
+		// omvalue: "₹66.5 Cr",
 		keyInfra: "108 OHSRs, 108 Tube Wells, 55000 FHTC's",
 	},
 	{
 		district: "Varanasi",
-		omvalue: "₹125.8 Cr",
+		// omvalue: "₹125.8 Cr",
 		keyInfra: "230 OHSRs, 230 Tube Wells, 115000 FHTC's",
 	},
 	{
 		district: "Siddharth Nagar",
-		omvalue: "₹20.1 Cr",
+		// omvalue: "₹20.1 Cr",
 		keyInfra: "19500 FHTC's, 50 OHSRs, 50 Tube Wells",
 	},
 ];
@@ -55,27 +55,27 @@ const epcProjectsUP = [
 const epcProjectsRajasthan = [
 	{
 		district: "Maharajganj & Mahuari",
-		omvalue: "₹62.9 Cr",
+		// omvalue: "₹62.9 Cr",
 		keyInfra: "108 OHSRs, 105 Tube Wells, 81358 FHTC's",
 	},
 	{
 		district: "Dungarpur",
-		omvalue: "₹11.31 Cr",
+		// omvalue: "₹11.31 Cr",
 		keyInfra: "25 OHSRs, WTP - 3 MLD, Intake Well - 3 MLD, 22000 FHTC's",
 	},
 	{
 		district: "Arthuna",
-		omvalue: "₹11.05 Cr",
+		// omvalue: "₹11.05 Cr",
 		keyInfra: "47 Tube Wells, 47 OHSR's, 11000 FHTC's",
 	},
 	{
 		district: "Bichhiwara",
-		omvalue: "₹11.05 Cr",
+		// omvalue: "₹11.05 Cr",
 		keyInfra: "12700 FHTC's, 29 Tube Wells, 29 OHSRs",
 	},
 	{
 		district: "Sarada",
-		omvalue: "₹11.05 Cr",
+		// omvalue: "₹11.05 Cr",
 		keyInfra: "16 OHSR's, 12000 FHTC's, WTP - 3.5 MLD",
 	},
 ];
@@ -198,7 +198,7 @@ const Page = () => {
 				<p className='xsPhone:text-[min(3.5vh,3.5vw)] smTablet:text-[min(2.4vh,2.4vw)] text-neutral-700 leading-relaxed w-[90%] text-justify'>
 					Desire Energy Solutions is leading the way in smart, efficient, and
 					sustainable public water infrastructure through Project Jal Prabal.
-					With a total valuation of ₹2592 crores, the project aligns with the
+				    The project aligns with the
 					Jal Jeevan Mission (JJM) to provide 55 LPCD (Liters Per Capita Per
 					Day) of clean potable water to every rural household in India. Our EPC
 					operations span 10 districts across Uttar Pradesh and Rajasthan, with
@@ -230,7 +230,7 @@ const Page = () => {
 						<TableHeader className='bg-gray-200 text-white'>
 							<TableRow>
 								<TableHead>District</TableHead>
-								<TableHead>O&M Value</TableHead>
+								{/* <TableHead>O&M Value</TableHead> */}
 								<TableHead>Key Infrastructure</TableHead>
 							</TableRow>
 						</TableHeader>
@@ -238,7 +238,7 @@ const Page = () => {
 							{epcProjectsUP.map((project, idx) => (
 								<TableRow key={idx}>
 									<TableCell>{project.district}</TableCell>
-									<TableCell>{project.omvalue}</TableCell>
+									{/* <TableCell>{project.omvalue}</TableCell> */}
 									<TableCell>{project.keyInfra}</TableCell>
 								</TableRow>
 							))}
@@ -254,7 +254,7 @@ const Page = () => {
 						<TableHeader className='bg-gray-200 text-white'>
 							<TableRow>
 								<TableHead>District</TableHead>
-								<TableHead>O&M Value</TableHead>
+								{/* <TableHead>O&M Value</TableHead> */}
 								<TableHead>Key Infrastructure</TableHead>
 							</TableRow>
 						</TableHeader>
@@ -262,7 +262,7 @@ const Page = () => {
 							{epcProjectsRajasthan.map((project, idx) => (
 								<TableRow key={idx}>
 									<TableCell>{project.district}</TableCell>
-									<TableCell>{project.omvalue}</TableCell>
+									{/* <TableCell>{project.omvalue}</TableCell> */}
 									<TableCell>{project.keyInfra}</TableCell>
 								</TableRow>
 							))}

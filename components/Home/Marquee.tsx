@@ -8,6 +8,17 @@ import Marquee5 from "@/public/asset/marquee/Marquee5.png";
 import Marquee6 from "@/public/asset/marquee/Marquee6.png";
 import Marquee8 from "@/public/asset/marquee/Marquee8.png";
 import Marquee9 from "@/public/asset/marquee/Marquee9.png";
+import Marquee10 from "@/public/asset/marquee/Marquee10.png";
+import Marquee11 from "@/public/asset/marquee/Marquee11.png";
+import Marquee12 from "@/public/asset/marquee/Marquee12.png";
+import Marquee13 from "@/public/asset/marquee/Marquee13.png";
+import Marquee14 from "@/public/asset/marquee/Marquee14.png";
+import Marquee15 from "@/public/asset/marquee/Marquee15.png";
+import Marquee16 from "@/public/asset/marquee/Marquee16.png";
+import Marquee17 from "@/public/asset/marquee/Marquee17.png";
+import Marquee18 from "@/public/asset/marquee/Marquee18.png";
+import Marquee19 from "@/public/asset/marquee/Marquee19.png";
+
 import Image from "next/image";
 
 const Marque = () => {
@@ -59,6 +70,47 @@ const Marque = () => {
 							<div>
 								<Image src={Marquee9} alt='' className='h-auto w-[9rem]' />
 							</div>
+
+              <div>
+								<Image src={Marquee10} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee11} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee12} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee13} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee14} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee15} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee16} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+              <div>
+								<Image src={Marquee17} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+               <div>
+								<Image src={Marquee18} alt='' className='h-auto w-[9rem]' />
+							</div>
+
+               <div>
+								<Image src={Marquee19} alt='' className='h-auto w-[9rem]' />
+							</div>
+
 						</div>
 					</Marquee>
 				</div>
