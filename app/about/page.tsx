@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import OurFocus from "@/components/About/OurFocus";
 import WhoWeAre from "@/components/About/WhoWeAre";
 import CoreValues from "@/components/About/CoreValues";
-
-// import headerImage from "@/public/asset/aboutPage/AboutPageCreative.png";
-import headerImage from "@/public/asset/headerImages/Header Image 3.jpg";
+// import headerPattern from "@/public/asset/Footer pattern 1.png";
+import headerImage from "@/public/asset/aboutPage/strip_image.jpg";
+// import headerImage from "@/public/asset/headerImages/Header Image 3.jpg";
 import Services from "@/components/About/Services";
 import { team } from "@/types";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -55,7 +55,7 @@ const TeamCarousel = ({ team, loaded }: { team: team[]; loaded: any }) => {
 								<SanityImage
 									src={member.mainImage}
 									className={
-										"absolute inset-0 w-full min-h-full object-cover object-center"
+										"absolute inset-0 w-full min-h-full object-cover object-top"
 									}
 								/>
 							</div>
@@ -131,9 +131,34 @@ const Page = () => {
 
 	return (
 		<div className='relative w-screen flex flex-col justify-center items-center'>
-			<div className='flex flex-col justify-center items-center w-full pt-4'>
-				<div className='smLaptop:h-[40vh] xsPhone:h-[40vh] smTablet:h-[min(42vh,42vw)] tablet:h-[min(45vh,45vw)] landscapes:h-[min(63vh,63vw)] w-[85%] xsPhone:flex-col smTablet:flex-row flex justify-start items-center xsPhone:gap-4 '>
+			{/* <div className='flex flex-col justify-center items-center w-full pt-4 relative'>
+				<div className='smLaptop:h-[40vh] xsPhone:h-[40vh] smTablet:h-[min(42vh,42vw)] tablet:h-[min(45vh,45vw)] landscapes:h-[min(63vh,63vw)] w-[85%] xsPhone:flex-col smTablet:flex-row flex justify-center items-center xsPhone:gap-4 '>
 					<div className='smTablet:w-[50%] xsPhone:w-full pt-[4rem] space-y-2'>
+						<p className='smTablet:text-[min(3vw,3vh)] xsPhone:text-[min(4vw,4vh)] font-titilium font-light'>
+							Who We Are?
+						</p>
+						<h1 className='text-[min(7vh,7vw)] font-titilium'>About Us</h1>
+					</div>
+					<div className='smTablet:w-[50%] xsPhone:h-fit smTablet:h-fit flex flex-col justify-center font-titilium text-gray-500 smTablet:pt-10'>
+						<p>
+							We are a family of 2000+ technocrats from different streams and
+							life, to achieve a common goal of sustainability by delivering
+							efficient & integrated water management innovative technologies,
+							products and services.
+						</p>
+					</div>
+				</div>
+				<div className='smLaptop:h-[60vh] xsPhone:h-[65vh] smTablet:h-[68vh] w-full'>
+					<Image
+						src={headerImage}
+						alt=''
+						className='w-full h-full object-cover'
+					/>
+				</div>
+			</div> */}
+			<div className='flex flex-col justify-center items-center w-full h-fit mt-[calc(10vh+4%)] relative'>
+				<div className='w-[85%] xsPhone:flex-col smTablet:flex-row flex justify-start items-center xsPhone:gap-4'>
+					<div className='smTablet:w-[50%] xsPhone:w-full space-y-2'>
 						<p className='smTablet:text-[min(3vw,3vh)] xsPhone:text-[min(4vw,4vh)] font-titilium font-light'>
 							Who We Are?
 						</p>
@@ -141,7 +166,11 @@ const Page = () => {
 					</div>
 				</div>
 			</div>
-
+			<Image
+				src={headerImage}
+				alt=''
+				className='h-full w-full object-cover my-10'
+			/>
 			<div className='bg-white mb-20 w-full flex justify-center items-start relative '>
 				<div className='w-[85%] flex flex-col justify-start items-start gap-10 '>
 					<WhoWeAre />
@@ -276,91 +305,143 @@ const Page = () => {
 						}>
 						<div
 							className={
-								"flex flex-col justify-start items-start gap-6 pb-6 bg-white"
+								"bg-white font-titilium relative w-full h-[400px] overflow-hidden group cursor-pointer"
 							}>
-							<div className={"w-full h-[400px] overflow-clip"}>
+							{/* Image Container - Fixed Height */}
+							<div
+								className={
+									"w-full h-[300px] overflow-hidden bg-gray-100 relative"
+								}>
 								<Image
 									src={saurabhSir}
 									alt={""}
-									className={"w-full min-h-full object-cover "}
+									className={
+										"absolute inset-0 w-full h-full object-cover object-top"
+									}
 								/>
 							</div>
 
-							<div className={"flex flex-col justify-center items-start px-6"}>
+							{/* Name and Designation - Fixed Position */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 h-[100px] flex flex-col justify-center z-10"
+								}>
 								<h1
 									className={
-										"smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+										"smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4vh,4vw)] font-semibold leading-tight"
 									}>
 									Mr. Saurabh Gupta
 								</h1>
-								<p className={"text-gray-500"}>Director</p>
+								<p className={"text-gray-500 text-sm mt-1"}>Director</p>
 							</div>
-							<p className={"px-6 text-neutral-600"}>
-								Saurabh Gupta, as Director at Desire Energy Solutions,
-								spearheads the decentralized water management division,
-								utilizing extensive operational expertise to lead strategic
-								initiatives in solar and water management, influencing long-term
-								organizational strategies and priorities.
-							</p>
+
+							{/* About Text - Slides up on hover with dynamic height */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 transform translate-y-full transition-all duration-300 ease-in-out group-hover:translate-y-0 z-20"
+								}>
+								<p className={"text-neutral-600 text-sm leading-relaxed"}>
+									Saurabh Gupta, as Director at Desire Energy Solutions,
+									spearheads the decentralized water management division,
+									utilizing extensive operational expertise to lead strategic
+									initiatives in solar and water management, influencing
+									long-term organizational strategies and priorities.
+								</p>
+							</div>
 						</div>
+
 						<div
 							className={
-								"flex flex-col justify-start items-start gap-6 pb-6 bg-white"
+								"bg-white font-titilium relative w-full h-[400px] overflow-hidden group cursor-pointer"
 							}>
-							<div className={"w-full h-[400px] overflow-clip"}>
+							{/* Image Container - Fixed Height */}
+							<div
+								className={
+									"w-full h-[300px] overflow-hidden bg-gray-100 relative"
+								}>
 								<Image
 									src={suraj}
 									alt={""}
-									className={"w-full min-h-full object-cover "}
+									className={
+										"absolute inset-0 w-full h-full object-cover object-top"
+									}
 								/>
 							</div>
 
-							<div className={"flex flex-col justify-center items-start px-6"}>
+							{/* Name and Designation - Fixed Position */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 h-[100px] flex flex-col justify-center z-10"
+								}>
 								<h1
 									className={
-										"smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+										"smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4vh,4vw)] font-semibold leading-tight"
 									}>
 									Mr. Suraj Khandelwal
 								</h1>
-								<p className={"text-gray-500"}>Director</p>
+								<p className={"text-gray-500 text-sm mt-1"}>Director</p>
 							</div>
-							<p className={"px-6 text-neutral-600"}>
-								Suraj Khandelwal, Director at Desire Energy Solutions, heads the
-								ESCO and EPC division with strong operational skills in project
-								execution, business expansion, and team management. His
-								leadership spans successful projects in Rajasthan and Uttar
-								Pradesh.
-							</p>
+
+							{/* About Text - Slides up on hover with dynamic height */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 transform translate-y-full transition-all duration-300 ease-in-out group-hover:translate-y-0 z-20"
+								}>
+								<p className={"text-neutral-600 text-sm leading-relaxed"}>
+									Suraj Khandelwal, Director at Desire Energy Solutions, heads
+									the ESCO and EPC division with strong operational skills in
+									project execution, business expansion, and team management.
+									His leadership spans successful projects in Rajasthan and
+									Uttar Pradesh.
+								</p>
+							</div>
 						</div>
 
 						<div
 							className={
-								"flex flex-col justify-start items-start gap-6 pb-6 bg-white"
+								"bg-white font-titilium relative w-full h-[400px] overflow-hidden group cursor-pointer"
 							}>
-							<div className={"w-full h-[400px] overflow-clip"}>
+							{/* Image Container - Fixed Height */}
+							<div
+								className={
+									"w-full h-[300px] overflow-hidden bg-gray-100 relative"
+								}>
 								<Image
 									src={ruchi}
 									alt={""}
-									className={"w-full min-h-full object-cover "}
+									className={
+										"absolute inset-0 w-full h-full object-cover object-top"
+									}
 								/>
 							</div>
 
-							<div className={"flex flex-col justify-center items-start px-6"}>
+							{/* Name and Designation - Fixed Position */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 h-[100px] flex flex-col justify-center z-10"
+								}>
 								<h1
 									className={
-										"smTablet:text-[min(3vh,3vw)] xsPhone:text-[min(6vh,6vw)]"
+										"smTablet:text-[min(2.5vh,2.5vw)] xsPhone:text-[min(4vh,4vw)] font-semibold leading-tight"
 									}>
 									Mrs. Ruchi Gupta
 								</h1>
-								<p className={"text-gray-500"}>Director</p>
+								<p className={"text-gray-500 text-sm mt-1"}>Director</p>
 							</div>
-							<p className={"px-6 text-neutral-600"}>
-								Ruchi Khandelwal, Director, drives company performance and
-								growth with a focus on culture and talent development. She
-								shapes strategy, leads support teams, and holds a commerce
-								degree from Maharani College, University of Rajasthan, and is a
-								Chartered Financial Analyst.
-							</p>
+
+							{/* About Text - Slides up on hover with dynamic height */}
+							<div
+								className={
+									"absolute bottom-0 left-0 right-0 bg-white px-6 py-4 transform translate-y-full transition-all duration-300 ease-in-out group-hover:translate-y-0 z-20"
+								}>
+								<p className={"text-neutral-600 text-sm leading-relaxed"}>
+									Ruchi Khandelwal, Director, drives company performance and
+									growth with a focus on culture and talent development. She
+									shapes strategy, leads support teams, and holds a commerce
+									degree from Maharani College, University of Rajasthan, and is
+									a Chartered Financial Analyst.
+								</p>
+							</div>
 						</div>
 					</div>
 
